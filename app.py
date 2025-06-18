@@ -5,16 +5,9 @@ import pandas as pd
 import os
 import urllib.request
 
-model_url = "https://raw.githubusercontent.com/hldfiadn/repoo/main/model2.pkl"
-model_path = "model2.pkl"
-
-# Download jika belum ada
-if not os.path.exists(model_path):
-    with urllib.request.urlopen(model_url) as response, open(model_path, 'wb') as out_file:
-        out_file.write(response.read())
 
 # Load model
-with open(model_path, "rb") as file:
+with open("model2.pkl", "rb") as file:
     model = pickle.load(file)
 
 
