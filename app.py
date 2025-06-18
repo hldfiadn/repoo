@@ -1,14 +1,9 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-from joblib import load
+import joblib
 
-# Load model
-@st.cache_resource
-def load_model():
-    return load("model2.joblib")
-
-model = load_model()
+model = joblib.load("model2.joblib")
 
 st.title("Student Dropout Prediction")
 
