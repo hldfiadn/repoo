@@ -7,8 +7,8 @@ import urllib.request
 
 
 # Load model
-with open("model2.pkl", "rb") as file:
-    model = pickle.load(file)
+from joblib import load
+model = load("model2.joblib")
 
 
 st.title("Student Dropout Prediction")
