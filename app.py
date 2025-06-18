@@ -7,7 +7,7 @@ import urllib.request
 
 
 # Load model
-with open("model2.pkl", "rb") as file:
+with open("model2.joblib", "rb") as file:
     model = pickle.load(file)
 
 
