@@ -1,0 +1,17 @@
+latar belakang : 
+- pertanian menjadi sektor utama dalam pemenuhan kebutuhan pangan di indonesia --> Sumatera menjadi  wilayah produktif yang penting dalam memenuhi kebutuhan pangan Indonesia --> Iklimnya mendukung pertanian
+- Tantangan perubhan iklim --> Perubahan iklim menyebabkan cuaca tidak stabil yang mempengaruhi hasil pertanian --> Cuaca ekstrem dapat mengakibatkan kegagalan panen dan penurunan produktivitas.
+- Prediksi hasil pertanian --> Prediksi hasil pertanian dapat meningkatkan produktivitas dan ketahanan pangan --> Data mining dengan Random Forest Regression (RFR) membantu membuat prediksi yang akurat.
+- Memprediksi keakuratan hasil panen di Sumatera dengan Random Forest Regression (RFR).
+
+
+tujuan :
+- prediksi keakuratan hasil pertanian dengan model regresi RFR
+- analisis pengaruh valiabel terhadap hasil panen tanaman pangan
+
+tahapan :
+- input data
+- eksplorasi data
+- praproses data
+- data mining
+- hasil

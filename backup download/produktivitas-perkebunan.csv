@@ -1,0 +1,346 @@
+bps_kode_provinsi;bps_nama_provinsi;bps_kode_kabupaten_kota;bps_nama_kabupaten_kota;tahun;jenis_perkebunan;produktivitas;satuan
+11;Aceh;1101;Kabupaten Simeulue;2021;Karet;1337;kg per ha
+11;Aceh;1102;Kabupaten Aceh Singkil;2021;Karet;903;kg per ha
+11;Aceh;1103;Kabupaten Aceh Selatan;2021;Karet;448;kg per ha
+11;Aceh;1104;Kabupaten Aceh Tenggara;2021;Karet;857;kg per ha
+11;Aceh;1105;Kabupaten Aceh Timur;2021;Karet;902;kg per ha
+11;Aceh;1106;Kabupaten Aceh Tengah;2021;Karet;;kg per ha
+11;Aceh;1107;Kabupaten Aceh Barat;2021;Karet;1;kg per ha
+11;Aceh;1108;Kabupaten Aceh Besar;2021;Karet;223;kg per ha
+11;Aceh;1109;Kabupaten Pidie;2021;Karet;;kg per ha
+11;Aceh;1110;Kabupaten Bireuen;2021;Karet;880;kg per ha
+11;Aceh;1111;Kabupaten Aceh Utara;2021;Karet;710;kg per ha
+11;Aceh;1112;Kabupaten Aceh Barat Daya;2021;Karet;374;kg per ha
+11;Aceh;1113;Kabupaten Gayo Lues;2021;Karet;500;kg per ha
+11;Aceh;1114;Kabupaten Aceh Tamiang;2021;Karet;800;kg per ha
+11;Aceh;1115;Kabupaten Nagan Raya;2021;Karet;820;kg per ha
+11;Aceh;1116;Kabupaten Aceh Jaya;2021;Karet;1022;kg per ha
+11;Aceh;1117;Kabupaten Bener Meriah;2021;Karet;;kg per ha
+11;Aceh;1118;Kabupaten Pidie Jaya;2021;Karet;680;kg per ha
+11;Aceh;1171;Kota Banda Aceh;2021;Karet;;kg per ha
+11;Aceh;1172;Kota Sabang;2021;Karet;;kg per ha
+11;Aceh;1173;Kota Langsa;2021;Karet;1632;kg per ha
+11;Aceh;1174;Kota Lhokseumawe;2021;Karet;692;kg per ha
+11;Aceh;1175;Kota Subulussalam;2021;Karet;565;kg per ha
+11;Aceh;1101;Kabupaten Simeulue;2021;Kelapa;1030;kg per ha
+11;Aceh;1102;Kabupaten Aceh Singkil;2021;Kelapa;900;kg per ha
+11;Aceh;1103;Kabupaten Aceh Selatan;2021;Kelapa;605;kg per ha
+11;Aceh;1104;Kabupaten Aceh Tenggara;2021;Kelapa;751;kg per ha
+11;Aceh;1105;Kabupaten Aceh Timur;2021;Kelapa;1005;kg per ha
+11;Aceh;1106;Kabupaten Aceh Tengah;2021;Kelapa;161;kg per ha
+11;Aceh;1107;Kabupaten Aceh Barat;2021;Kelapa;500;kg per ha
+11;Aceh;1108;Kabupaten Aceh Besar;2021;Kelapa;946;kg per ha
+11;Aceh;1109;Kabupaten Pidie;2021;Kelapa;810;kg per ha
+11;Aceh;1110;Kabupaten Bireuen;2021;Kelapa;1125;kg per ha
+11;Aceh;1111;Kabupaten Aceh Utara;2021;Kelapa;720;kg per ha
+11;Aceh;1112;Kabupaten Aceh Barat Daya;2021;Kelapa;584;kg per ha
+11;Aceh;1113;Kabupaten Gayo Lues;2021;Kelapa;400;kg per ha
+11;Aceh;1114;Kabupaten Aceh Tamiang;2021;Kelapa;580;kg per ha
+11;Aceh;1115;Kabupaten Nagan Raya;2021;Kelapa;250;kg per ha
+11;Aceh;1116;Kabupaten Aceh Jaya;2021;Kelapa;869;kg per ha
+11;Aceh;1117;Kabupaten Bener Meriah;2021;Kelapa;200;kg per ha
+11;Aceh;1118;Kabupaten Pidie Jaya;2021;Kelapa;883;kg per ha
+11;Aceh;1171;Kota Banda Aceh;2021;Kelapa;;kg per ha
+11;Aceh;1172;Kota Sabang;2021;Kelapa;615;kg per ha
+11;Aceh;1173;Kota Langsa;2021;Kelapa;1738;kg per ha
+11;Aceh;1174;Kota Lhokseumawe;2021;Kelapa;629;kg per ha
+11;Aceh;1175;Kota Subulussalam;2021;Kelapa;666;kg per ha
+11;Aceh;1101;Kabupaten Simeulue;2021;Kelapa Sawit;918;kg per ha
+11;Aceh;1102;Kabupaten Aceh Singkil;2021;Kelapa Sawit;3456;kg per ha
+11;Aceh;1103;Kabupaten Aceh Selatan;2021;Kelapa Sawit;2619;kg per ha
+11;Aceh;1104;Kabupaten Aceh Tenggara;2021;Kelapa Sawit;2700;kg per ha
+11;Aceh;1105;Kabupaten Aceh Timur;2021;Kelapa Sawit;2358;kg per ha
+11;Aceh;1106;Kabupaten Aceh Tengah;2021;Kelapa Sawit;;kg per ha
+11;Aceh;1107;Kabupaten Aceh Barat;2021;Kelapa Sawit;3516;kg per ha
+11;Aceh;1108;Kabupaten Aceh Besar;2021;Kelapa Sawit;607;kg per ha
+11;Aceh;1109;Kabupaten Pidie;2021;Kelapa Sawit;816;kg per ha
+11;Aceh;1110;Kabupaten Bireuen;2021;Kelapa Sawit;2055;kg per ha
+11;Aceh;1111;Kabupaten Aceh Utara;2021;Kelapa Sawit;3917;kg per ha
+11;Aceh;1112;Kabupaten Aceh Barat Daya;2021;Kelapa Sawit;1683;kg per ha
+11;Aceh;1113;Kabupaten Gayo Lues;2021;Kelapa Sawit;;kg per ha
+11;Aceh;1114;Kabupaten Aceh Tamiang;2021;Kelapa Sawit;2520;kg per ha
+11;Aceh;1115;Kabupaten Nagan Raya;2021;Kelapa Sawit;2655;kg per ha
+11;Aceh;1116;Kabupaten Aceh Jaya;2021;Kelapa Sawit;2852;kg per ha
+11;Aceh;1117;Kabupaten Bener Meriah;2021;Kelapa Sawit;1126;kg per ha
+11;Aceh;1118;Kabupaten Pidie Jaya;2021;Kelapa Sawit;2389;kg per ha
+11;Aceh;1171;Kota Banda Aceh;2021;Kelapa Sawit;;kg per ha
+11;Aceh;1172;Kota Sabang;2021;Kelapa Sawit;;kg per ha
+11;Aceh;1173;Kota Langsa;2021;Kelapa Sawit;2166;kg per ha
+11;Aceh;1174;Kota Lhokseumawe;2021;Kelapa Sawit;2531;kg per ha
+11;Aceh;1175;Kota Subulussalam;2021;Kelapa Sawit;2724;kg per ha
+11;Aceh;1101;Kabupaten Simeulue;2021;Kopi;;kg per ha
+11;Aceh;1102;Kabupaten Aceh Singkil;2021;Kopi;514;kg per ha
+11;Aceh;1103;Kabupaten Aceh Selatan;2021;Kopi;373;kg per ha
+11;Aceh;1104;Kabupaten Aceh Tenggara;2021;Kopi;1029;kg per ha
+11;Aceh;1105;Kabupaten Aceh Timur;2021;Kopi;324;kg per ha
+11;Aceh;1106;Kabupaten Aceh Tengah;2021;Kopi;1350;kg per ha
+11;Aceh;1107;Kabupaten Aceh Barat;2021;Kopi;200;kg per ha
+11;Aceh;1108;Kabupaten Aceh Besar;2021;Kopi;498;kg per ha
+11;Aceh;1109;Kabupaten Pidie;2021;Kopi;1196;kg per ha
+11;Aceh;1110;Kabupaten Bireuen;2021;Kopi;551;kg per ha
+11;Aceh;1111;Kabupaten Aceh Utara;2021;Kopi;946;kg per ha
+11;Aceh;1112;Kabupaten Aceh Barat Daya;2021;Kopi;650;kg per ha
+11;Aceh;1113;Kabupaten Gayo Lues;2021;Kopi;1300;kg per ha
+11;Aceh;1114;Kabupaten Aceh Tamiang;2021;Kopi;310;kg per ha
+11;Aceh;1115;Kabupaten Nagan Raya;2021;Kopi;524;kg per ha
+11;Aceh;1116;Kabupaten Aceh Jaya;2021;Kopi;696;kg per ha
+11;Aceh;1117;Kabupaten Bener Meriah;2021;Kopi;1574;kg per ha
+11;Aceh;1118;Kabupaten Pidie Jaya;2021;Kopi;332;kg per ha
+11;Aceh;1171;Kota Banda Aceh;2021;Kopi;;kg per ha
+11;Aceh;1172;Kota Sabang;2021;Kopi;;kg per ha
+11;Aceh;1173;Kota Langsa;2021;Kopi;;kg per ha
+11;Aceh;1174;Kota Lhokseumawe;2021;Kopi;500;kg per ha
+11;Aceh;1175;Kota Subulussalam;2021;Kopi;429;kg per ha
+11;Aceh;1101;Kabupaten Simeulue;2021;Kakao;249;kg per ha
+11;Aceh;1102;Kabupaten Aceh Singkil;2021;Kakao;868;kg per ha
+11;Aceh;1103;Kabupaten Aceh Selatan;2021;Kakao;494;kg per ha
+11;Aceh;1104;Kabupaten Aceh Tenggara;2021;Kakao;931;kg per ha
+11;Aceh;1105;Kabupaten Aceh Timur;2021;Kakao;635;kg per ha
+11;Aceh;1106;Kabupaten Aceh Tengah;2021;Kakao;610;kg per ha
+11;Aceh;1107;Kabupaten Aceh Barat;2021;Kakao;639;kg per ha
+11;Aceh;1108;Kabupaten Aceh Besar;2021;Kakao;565;kg per ha
+11;Aceh;1109;Kabupaten Pidie;2021;Kakao;563;kg per ha
+11;Aceh;1110;Kabupaten Bireuen;2021;Kakao;625;kg per ha
+11;Aceh;1111;Kabupaten Aceh Utara;2021;Kakao;664;kg per ha
+11;Aceh;1112;Kabupaten Aceh Barat Daya;2021;Kakao;659;kg per ha
+11;Aceh;1113;Kabupaten Gayo Lues;2021;Kakao;800;kg per ha
+11;Aceh;1114;Kabupaten Aceh Tamiang;2021;Kakao;576;kg per ha
+11;Aceh;1115;Kabupaten Nagan Raya;2021;Kakao;500;kg per ha
+11;Aceh;1116;Kabupaten Aceh Jaya;2021;Kakao;791;kg per ha
+11;Aceh;1117;Kabupaten Bener Meriah;2021;Kakao;650;kg per ha
+11;Aceh;1118;Kabupaten Pidie Jaya;2021;Kakao;800;kg per ha
+11;Aceh;1171;Kota Banda Aceh;2021;Kakao;;kg per ha
+11;Aceh;1172;Kota Sabang;2021;Kakao;990;kg per ha
+11;Aceh;1173;Kota Langsa;2021;Kakao;700;kg per ha
+11;Aceh;1174;Kota Lhokseumawe;2021;Kakao;960;kg per ha
+11;Aceh;1175;Kota Subulussalam;2021;Kakao;571;kg per ha
+11;Aceh;1101;Kabupaten Simeulue;2021;Jambu Mete;;kg per ha
+11;Aceh;1102;Kabupaten Aceh Singkil;2021;Jambu Mete;;kg per ha
+11;Aceh;1103;Kabupaten Aceh Selatan;2021;Jambu Mete;;kg per ha
+11;Aceh;1104;Kabupaten Aceh Tenggara;2021;Jambu Mete;;kg per ha
+11;Aceh;1105;Kabupaten Aceh Timur;2021;Jambu Mete;;kg per ha
+11;Aceh;1106;Kabupaten Aceh Tengah;2021;Jambu Mete;;kg per ha
+11;Aceh;1107;Kabupaten Aceh Barat;2021;Jambu Mete;;kg per ha
+11;Aceh;1108;Kabupaten Aceh Besar;2021;Jambu Mete;215;kg per ha
+11;Aceh;1109;Kabupaten Pidie;2021;Jambu Mete;;kg per ha
+11;Aceh;1110;Kabupaten Bireuen;2021;Jambu Mete;;kg per ha
+11;Aceh;1111;Kabupaten Aceh Utara;2021;Jambu Mete;;kg per ha
+11;Aceh;1112;Kabupaten Aceh Barat Daya;2021;Jambu Mete;;kg per ha
+11;Aceh;1113;Kabupaten Gayo Lues;2021;Jambu Mete;;kg per ha
+11;Aceh;1114;Kabupaten Aceh Tamiang;2021;Jambu Mete;;kg per ha
+11;Aceh;1115;Kabupaten Nagan Raya;2021;Jambu Mete;;kg per ha
+11;Aceh;1116;Kabupaten Aceh Jaya;2021;Jambu Mete;;kg per ha
+11;Aceh;1117;Kabupaten Bener Meriah;2021;Jambu Mete;;kg per ha
+11;Aceh;1118;Kabupaten Pidie Jaya;2021;Jambu Mete;;kg per ha
+11;Aceh;1171;Kota Banda Aceh;2021;Jambu Mete;;kg per ha
+11;Aceh;1172;Kota Sabang;2021;Jambu Mete;;kg per ha
+11;Aceh;1173;Kota Langsa;2021;Jambu Mete;;kg per ha
+11;Aceh;1174;Kota Lhokseumawe;2021;Jambu Mete;;kg per ha
+11;Aceh;1175;Kota Subulussalam;2021;Jambu Mete;;kg per ha
+11;Aceh;1101;Kabupaten Simeulue;2021;Pala;656;kg per ha
+11;Aceh;1102;Kabupaten Aceh Singkil;2021;Pala;300;kg per ha
+11;Aceh;1103;Kabupaten Aceh Selatan;2021;Pala;824;kg per ha
+11;Aceh;1104;Kabupaten Aceh Tenggara;2021;Pala;378;kg per ha
+11;Aceh;1105;Kabupaten Aceh Timur;2021;Pala;;kg per ha
+11;Aceh;1106;Kabupaten Aceh Tengah;2021;Pala;200;kg per ha
+11;Aceh;1107;Kabupaten Aceh Barat;2021;Pala;301;kg per ha
+11;Aceh;1108;Kabupaten Aceh Besar;2021;Pala;350;kg per ha
+11;Aceh;1109;Kabupaten Pidie;2021;Pala;564;kg per ha
+11;Aceh;1110;Kabupaten Bireuen;2021;Pala;295;kg per ha
+11;Aceh;1111;Kabupaten Aceh Utara;2021;Pala;283;kg per ha
+11;Aceh;1112;Kabupaten Aceh Barat Daya;2021;Pala;195;kg per ha
+11;Aceh;1113;Kabupaten Gayo Lues;2021;Pala;;kg per ha
+11;Aceh;1114;Kabupaten Aceh Tamiang;2021;Pala;;kg per ha
+11;Aceh;1115;Kabupaten Nagan Raya;2021;Pala;716;kg per ha
+11;Aceh;1116;Kabupaten Aceh Jaya;2021;Pala;301;kg per ha
+11;Aceh;1117;Kabupaten Bener Meriah;2021;Pala;54;kg per ha
+11;Aceh;1118;Kabupaten Pidie Jaya;2021;Pala;416;kg per ha
+11;Aceh;1171;Kota Banda Aceh;2021;Pala;;kg per ha
+11;Aceh;1172;Kota Sabang;2021;Pala;130;kg per ha
+11;Aceh;1173;Kota Langsa;2021;Pala;;kg per ha
+11;Aceh;1174;Kota Lhokseumawe;2021;Pala;;kg per ha
+11;Aceh;1175;Kota Subulussalam;2021;Pala;;kg per ha
+11;Aceh;1101;Kabupaten Simeulue;2021;Lada;;kg per ha
+11;Aceh;1102;Kabupaten Aceh Singkil;2021;Lada;660;kg per ha
+11;Aceh;1103;Kabupaten Aceh Selatan;2021;Lada;200;kg per ha
+11;Aceh;1104;Kabupaten Aceh Tenggara;2021;Lada;452;kg per ha
+11;Aceh;1105;Kabupaten Aceh Timur;2021;Lada;326;kg per ha
+11;Aceh;1106;Kabupaten Aceh Tengah;2021;Lada;254;kg per ha
+11;Aceh;1107;Kabupaten Aceh Barat;2021;Lada;200;kg per ha
+11;Aceh;1108;Kabupaten Aceh Besar;2021;Lada;691;kg per ha
+11;Aceh;1109;Kabupaten Pidie;2021;Lada;310;kg per ha
+11;Aceh;1110;Kabupaten Bireuen;2021;Lada;509;kg per ha
+11;Aceh;1111;Kabupaten Aceh Utara;2021;Lada;545;kg per ha
+11;Aceh;1112;Kabupaten Aceh Barat Daya;2021;Lada;;kg per ha
+11;Aceh;1113;Kabupaten Gayo Lues;2021;Lada;50;kg per ha
+11;Aceh;1114;Kabupaten Aceh Tamiang;2021;Lada;120;kg per ha
+11;Aceh;1115;Kabupaten Nagan Raya;2021;Lada;;kg per ha
+11;Aceh;1116;Kabupaten Aceh Jaya;2021;Lada;;kg per ha
+11;Aceh;1117;Kabupaten Bener Meriah;2021;Lada;256;kg per ha
+11;Aceh;1118;Kabupaten Pidie Jaya;2021;Lada;500;kg per ha
+11;Aceh;1171;Kota Banda Aceh;2021;Lada;;kg per ha
+11;Aceh;1172;Kota Sabang;2021;Lada;210;kg per ha
+11;Aceh;1173;Kota Langsa;2021;Lada;;kg per ha
+11;Aceh;1174;Kota Lhokseumawe;2021;Lada;800;kg per ha
+11;Aceh;1175;Kota Subulussalam;2021;Lada;620;kg per ha
+11;Aceh;1101;Kabupaten Simeulue;2021;Tebu;;kg per ha
+11;Aceh;1102;Kabupaten Aceh Singkil;2021;Tebu;500;kg per ha
+11;Aceh;1103;Kabupaten Aceh Selatan;2021;Tebu;481;kg per ha
+11;Aceh;1104;Kabupaten Aceh Tenggara;2021;Tebu;500;kg per ha
+11;Aceh;1105;Kabupaten Aceh Timur;2021;Tebu;1000;kg per ha
+11;Aceh;1106;Kabupaten Aceh Tengah;2021;Tebu;8000;kg per ha
+11;Aceh;1107;Kabupaten Aceh Barat;2021;Tebu;;kg per ha
+11;Aceh;1108;Kabupaten Aceh Besar;2021;Tebu;900;kg per ha
+11;Aceh;1109;Kabupaten Pidie;2021;Tebu;11;kg per ha
+11;Aceh;1110;Kabupaten Bireuen;2021;Tebu;582;kg per ha
+11;Aceh;1111;Kabupaten Aceh Utara;2021;Tebu;967;kg per ha
+11;Aceh;1112;Kabupaten Aceh Barat Daya;2021;Tebu;;kg per ha
+11;Aceh;1113;Kabupaten Gayo Lues;2021;Tebu;1026;kg per ha
+11;Aceh;1114;Kabupaten Aceh Tamiang;2021;Tebu;1071;kg per ha
+11;Aceh;1115;Kabupaten Nagan Raya;2021;Tebu;1499;kg per ha
+11;Aceh;1116;Kabupaten Aceh Jaya;2021;Tebu;;kg per ha
+11;Aceh;1117;Kabupaten Bener Meriah;2021;Tebu;877;kg per ha
+11;Aceh;1118;Kabupaten Pidie Jaya;2021;Tebu;426;kg per ha
+11;Aceh;1171;Kota Banda Aceh;2021;Tebu;;kg per ha
+11;Aceh;1172;Kota Sabang;2021;Tebu;;kg per ha
+11;Aceh;1173;Kota Langsa;2021;Tebu;1833;kg per ha
+11;Aceh;1174;Kota Lhokseumawe;2021;Tebu;917;kg per ha
+11;Aceh;1175;Kota Subulussalam;2021;Tebu;1667;kg per ha
+11;Aceh;1101;Kabupaten Simeulue;2021;Tembakau;;kg per ha
+11;Aceh;1102;Kabupaten Aceh Singkil;2021;Tembakau;;kg per ha
+11;Aceh;1103;Kabupaten Aceh Selatan;2021;Tembakau;;kg per ha
+11;Aceh;1104;Kabupaten Aceh Tenggara;2021;Tembakau;100;kg per ha
+11;Aceh;1105;Kabupaten Aceh Timur;2021;Tembakau;860;kg per ha
+11;Aceh;1106;Kabupaten Aceh Tengah;2021;Tembakau;900;kg per ha
+11;Aceh;1107;Kabupaten Aceh Barat;2021;Tembakau;;kg per ha
+11;Aceh;1108;Kabupaten Aceh Besar;2021;Tembakau;860;kg per ha
+11;Aceh;1109;Kabupaten Pidie;2021;Tembakau;1449;kg per ha
+11;Aceh;1110;Kabupaten Bireuen;2021;Tembakau;410;kg per ha
+11;Aceh;1111;Kabupaten Aceh Utara;2021;Tembakau;980;kg per ha
+11;Aceh;1112;Kabupaten Aceh Barat Daya;2021;Tembakau;;kg per ha
+11;Aceh;1113;Kabupaten Gayo Lues;2021;Tembakau;906;kg per ha
+11;Aceh;1114;Kabupaten Aceh Tamiang;2021;Tembakau;;kg per ha
+11;Aceh;1115;Kabupaten Nagan Raya;2021;Tembakau;750;kg per ha
+11;Aceh;1116;Kabupaten Aceh Jaya;2021;Tembakau;;kg per ha
+11;Aceh;1117;Kabupaten Bener Meriah;2021;Tembakau;600;kg per ha
+11;Aceh;1118;Kabupaten Pidie Jaya;2021;Tembakau;1450;kg per ha
+11;Aceh;1171;Kota Banda Aceh;2021;Tembakau;;kg per ha
+11;Aceh;1172;Kota Sabang;2021;Tembakau;;kg per ha
+11;Aceh;1173;Kota Langsa;2021;Tembakau;;kg per ha
+11;Aceh;1174;Kota Lhokseumawe;2021;Tembakau;;kg per ha
+11;Aceh;1175;Kota Subulussalam;2021;Tembakau;;kg per ha
+11;Aceh;1101;Kabupaten Simeulue;2021;Nilam;;kg per ha
+11;Aceh;1102;Kabupaten Aceh Singkil;2021;Nilam;183;kg per ha
+11;Aceh;1103;Kabupaten Aceh Selatan;2021;Nilam;193;kg per ha
+11;Aceh;1104;Kabupaten Aceh Tenggara;2021;Nilam;125;kg per ha
+11;Aceh;1105;Kabupaten Aceh Timur;2021;Nilam;;kg per ha
+11;Aceh;1106;Kabupaten Aceh Tengah;2021;Nilam;;kg per ha
+11;Aceh;1107;Kabupaten Aceh Barat;2021;Nilam;195;kg per ha
+11;Aceh;1108;Kabupaten Aceh Besar;2021;Nilam;181;kg per ha
+11;Aceh;1109;Kabupaten Pidie;2021;Nilam;;kg per ha
+11;Aceh;1110;Kabupaten Bireuen;2021;Nilam;160;kg per ha
+11;Aceh;1111;Kabupaten Aceh Utara;2021;Nilam;200;kg per ha
+11;Aceh;1112;Kabupaten Aceh Barat Daya;2021;Nilam;136;kg per ha
+11;Aceh;1113;Kabupaten Gayo Lues;2021;Nilam;169;kg per ha
+11;Aceh;1114;Kabupaten Aceh Tamiang;2021;Nilam;100;kg per ha
+11;Aceh;1115;Kabupaten Nagan Raya;2021;Nilam;16;kg per ha
+11;Aceh;1116;Kabupaten Aceh Jaya;2021;Nilam;179;kg per ha
+11;Aceh;1117;Kabupaten Bener Meriah;2021;Nilam;;kg per ha
+11;Aceh;1118;Kabupaten Pidie Jaya;2021;Nilam;;kg per ha
+11;Aceh;1171;Kota Banda Aceh;2021;Nilam;;kg per ha
+11;Aceh;1172;Kota Sabang;2021;Nilam;;kg per ha
+11;Aceh;1173;Kota Langsa;2021;Nilam;;kg per ha
+11;Aceh;1174;Kota Lhokseumawe;2021;Nilam;;kg per ha
+11;Aceh;1175;Kota Subulussalam;2021;Nilam;;kg per ha
+11;Aceh;1101;Kabupaten Simeulue;2021;Kemiri;;kg per ha
+11;Aceh;1102;Kabupaten Aceh Singkil;2021;Kemiri;604;kg per ha
+11;Aceh;1103;Kabupaten Aceh Selatan;2021;Kemiri;357;kg per ha
+11;Aceh;1104;Kabupaten Aceh Tenggara;2021;Kemiri;700;kg per ha
+11;Aceh;1105;Kabupaten Aceh Timur;2021;Kemiri;326;kg per ha
+11;Aceh;1106;Kabupaten Aceh Tengah;2021;Kemiri;354;kg per ha
+11;Aceh;1107;Kabupaten Aceh Barat;2021;Kemiri;;kg per ha
+11;Aceh;1108;Kabupaten Aceh Besar;2021;Kemiri;632;kg per ha
+11;Aceh;1109;Kabupaten Pidie;2021;Kemiri;563;kg per ha
+11;Aceh;1110;Kabupaten Bireuen;2021;Kemiri;1195;kg per ha
+11;Aceh;1111;Kabupaten Aceh Utara;2021;Kemiri;796;kg per ha
+11;Aceh;1112;Kabupaten Aceh Barat Daya;2021;Kemiri;;kg per ha
+11;Aceh;1113;Kabupaten Gayo Lues;2021;Kemiri;740;kg per ha
+11;Aceh;1114;Kabupaten Aceh Tamiang;2021;Kemiri;;kg per ha
+11;Aceh;1115;Kabupaten Nagan Raya;2021;Kemiri;864;kg per ha
+11;Aceh;1116;Kabupaten Aceh Jaya;2021;Kemiri;;kg per ha
+11;Aceh;1117;Kabupaten Bener Meriah;2021;Kemiri;293;kg per ha
+11;Aceh;1118;Kabupaten Pidie Jaya;2021;Kemiri;293;kg per ha
+11;Aceh;1171;Kota Banda Aceh;2021;Kemiri;;kg per ha
+11;Aceh;1172;Kota Sabang;2021;Kemiri;400;kg per ha
+11;Aceh;1173;Kota Langsa;2021;Kemiri;;kg per ha
+11;Aceh;1174;Kota Lhokseumawe;2021;Kemiri;844;kg per ha
+11;Aceh;1175;Kota Subulussalam;2021;Kemiri;983;kg per ha
+11;Aceh;1101;Kabupaten Simeulue;2021;Serewangi;;kg per ha
+11;Aceh;1102;Kabupaten Aceh Singkil;2021;Serewangi;80;kg per ha
+11;Aceh;1103;Kabupaten Aceh Selatan;2021;Serewangi;156;kg per ha
+11;Aceh;1104;Kabupaten Aceh Tenggara;2021;Serewangi;150;kg per ha
+11;Aceh;1105;Kabupaten Aceh Timur;2021;Serewangi;115;kg per ha
+11;Aceh;1106;Kabupaten Aceh Tengah;2021;Serewangi;160;kg per ha
+11;Aceh;1107;Kabupaten Aceh Barat;2021;Serewangi;;kg per ha
+11;Aceh;1108;Kabupaten Aceh Besar;2021;Serewangi;400;kg per ha
+11;Aceh;1109;Kabupaten Pidie;2021;Serewangi;;kg per ha
+11;Aceh;1110;Kabupaten Bireuen;2021;Serewangi;;kg per ha
+11;Aceh;1111;Kabupaten Aceh Utara;2021;Serewangi;200;kg per ha
+11;Aceh;1112;Kabupaten Aceh Barat Daya;2021;Serewangi;190;kg per ha
+11;Aceh;1113;Kabupaten Gayo Lues;2021;Serewangi;170;kg per ha
+11;Aceh;1114;Kabupaten Aceh Tamiang;2021;Serewangi;;kg per ha
+11;Aceh;1115;Kabupaten Nagan Raya;2021;Serewangi;4;kg per ha
+11;Aceh;1116;Kabupaten Aceh Jaya;2021;Serewangi;;kg per ha
+11;Aceh;1117;Kabupaten Bener Meriah;2021;Serewangi;441;kg per ha
+11;Aceh;1118;Kabupaten Pidie Jaya;2021;Serewangi;260;kg per ha
+11;Aceh;1171;Kota Banda Aceh;2021;Serewangi;;kg per ha
+11;Aceh;1172;Kota Sabang;2021;Serewangi;;kg per ha
+11;Aceh;1173;Kota Langsa;2021;Serewangi;;kg per ha
+11;Aceh;1174;Kota Lhokseumawe;2021;Serewangi;;kg per ha
+11;Aceh;1175;Kota Subulussalam;2021;Serewangi;;kg per ha
+11;Aceh;1101;Kabupaten Simeulue;2021;Cengkeh;617;kg per ha
+11;Aceh;1102;Kabupaten Aceh Singkil;2021;Cengkeh;443;kg per ha
+11;Aceh;1103;Kabupaten Aceh Selatan;2021;Cengkeh;546;kg per ha
+11;Aceh;1104;Kabupaten Aceh Tenggara;2021;Cengkeh;286;kg per ha
+11;Aceh;1105;Kabupaten Aceh Timur;2021;Cengkeh;;kg per ha
+11;Aceh;1106;Kabupaten Aceh Tengah;2021;Cengkeh;;kg per ha
+11;Aceh;1107;Kabupaten Aceh Barat;2021;Cengkeh;;kg per ha
+11;Aceh;1108;Kabupaten Aceh Besar;2021;Cengkeh;525;kg per ha
+11;Aceh;1109;Kabupaten Pidie;2021;Cengkeh;250;kg per ha
+11;Aceh;1110;Kabupaten Bireuen;2021;Cengkeh;335;kg per ha
+11;Aceh;1111;Kabupaten Aceh Utara;2021;Cengkeh;68;kg per ha
+11;Aceh;1112;Kabupaten Aceh Barat Daya;2021;Cengkeh;474;kg per ha
+11;Aceh;1113;Kabupaten Gayo Lues;2021;Cengkeh;231;kg per ha
+11;Aceh;1114;Kabupaten Aceh Tamiang;2021;Cengkeh;;kg per ha
+11;Aceh;1115;Kabupaten Nagan Raya;2021;Cengkeh;;kg per ha
+11;Aceh;1116;Kabupaten Aceh Jaya;2021;Cengkeh;442;kg per ha
+11;Aceh;1117;Kabupaten Bener Meriah;2021;Cengkeh;200;kg per ha
+11;Aceh;1118;Kabupaten Pidie Jaya;2021;Cengkeh;400;kg per ha
+11;Aceh;1171;Kota Banda Aceh;2021;Cengkeh;;kg per ha
+11;Aceh;1172;Kota Sabang;2021;Cengkeh;738;kg per ha
+11;Aceh;1173;Kota Langsa;2021;Cengkeh;;kg per ha
+11;Aceh;1174;Kota Lhokseumawe;2021;Cengkeh;;kg per ha
+11;Aceh;1175;Kota Subulussalam;2021;Cengkeh;;kg per ha
+11;Aceh;1101;Kabupaten Simeulue;2021;Pinang;347;kg per ha
+11;Aceh;1102;Kabupaten Aceh Singkil;2021;Pinang;400;kg per ha
+11;Aceh;1103;Kabupaten Aceh Selatan;2021;Pinang;405;kg per ha
+11;Aceh;1104;Kabupaten Aceh Tenggara;2021;Pinang;418;kg per ha
+11;Aceh;1105;Kabupaten Aceh Timur;2021;Pinang;680;kg per ha
+11;Aceh;1106;Kabupaten Aceh Tengah;2021;Pinang;743;kg per ha
+11;Aceh;1107;Kabupaten Aceh Barat;2021;Pinang;400;kg per ha
+11;Aceh;1108;Kabupaten Aceh Besar;2021;Pinang;601;kg per ha
+11;Aceh;1109;Kabupaten Pidie;2021;Pinang;1016;kg per ha
+11;Aceh;1110;Kabupaten Bireuen;2021;Pinang;770;kg per ha
+11;Aceh;1111;Kabupaten Aceh Utara;2021;Pinang;389;kg per ha
+11;Aceh;1112;Kabupaten Aceh Barat Daya;2021;Pinang;656;kg per ha
+11;Aceh;1113;Kabupaten Gayo Lues;2021;Pinang;302;kg per ha
+11;Aceh;1114;Kabupaten Aceh Tamiang;2021;Pinang;500;kg per ha
+11;Aceh;1115;Kabupaten Nagan Raya;2021;Pinang;390;kg per ha
+11;Aceh;1116;Kabupaten Aceh Jaya;2021;Pinang;410;kg per ha
+11;Aceh;1117;Kabupaten Bener Meriah;2021;Pinang;149;kg per ha
+11;Aceh;1118;Kabupaten Pidie Jaya;2021;Pinang;479;kg per ha
+11;Aceh;1171;Kota Banda Aceh;2021;Pinang;;kg per ha
+11;Aceh;1172;Kota Sabang;2021;Pinang;439;kg per ha
+11;Aceh;1173;Kota Langsa;2021;Pinang;1256;kg per ha
+11;Aceh;1174;Kota Lhokseumawe;2021;Pinang;986;kg per ha
+11;Aceh;1175;Kota Subulussalam;2021;Pinang;397;kg per ha

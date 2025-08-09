@@ -1,0 +1,1353 @@
+
+var NOMERACAK=5;
+var ELMNT='';
+var DOMAIN_LOKAL='';
+var LOG_LOKAL=0;
+
+function cekhasilform(){
+	if(document.getElementById('id_sp')){
+	}else{
+		var x=confirm('Akun email anda '+DATA_USER.email+' belum terdaftar di spada indonesia\nApakah anda akan melakukan registrasi di Spada Indonesia??');
+		if(x){
+			window.location='https://spada.kemdikbud.go.id/register?emaillock='+encodeURIComponent(DATA_USER.email)+'&id_sp='+ID_SP;
+		}
+	}
+}
+function BikinFormDaftar(){
+	if(ELMNT!=''){
+		
+		if(ELMNT== 'block-region-content'){
+			var txt=form34();
+		}else{
+			var txt=buatformdaftar();
+		}
+		$('#'+ELMNT).prepend(txt);
+		console.log('register form created : '+ELMNT);
+		document.title='Belum Terdaftar di Spada Indonesia';
+		$('#id_firstname').val(DATA_USER.firstname);
+		$('#id_lastname').val(DATA_USER.lastname);
+		$('#id_email').val(DATA_USER.email);
+		$('#id_email2').val(DATA_USER.email);
+	    $('#id_sms').html(SMS_DATA);
+		$('#id_sp').val(ID_SP);
+	    $('#approval_pengguna').change(function() {
+			 var v=$(this).val();
+			 $('#keterangan_idnumber').text('NIM');
+			 if(v==46){
+				 $('#keterangan_idnumber').text('NIDN');
+			 }
+	   });
+		$('#mform1_spadareg').on('submit', function (e) {
+			e.preventDefault(); 
+			warningtxt(''); $('#btn-daftar-spada').prop('disabled',true);
+			var data=window.btoa($(this).serialize());
+			$.ajax({
+				type: 'post',
+				crossDomain: true,
+				url: 'https://spada.kemdikbud.go.id/regformlms?auth_code='+AUTH_CODE,
+				data: 'data='+data,
+				success: function(data){
+					$('#btn-daftar-spada').prop('disabled',false);
+					$('#balikandaftar').html(data);
+				}
+			});
+		});
+	}
+}
+if (document.readyState == 'complete') {
+    runspadaIndonesia();
+} else {
+    document.onreadystatechange = function () {
+        if (document.readyState === "complete") {
+           runspadaIndonesia();
+        }
+    }
+}
+var DATA_USER={"firstname":"Muslimin","lastname":"Muslimin","email":"2022110059@students.uigm.ac.id","id":"7431"};
+var WWW='https://vclass.uigm.ac.id';
+var ID_SP='714b1a5f-1d6a-49b2-a577-64732a949d1c';
+var SMS_DATA='<option value="6ae2686f-7c07-4949-b4d8-d4819c903fbd">D3 Manajemen Informatika</option><option value="600c5ee1-c00f-4d03-8bc9-b73912a5a5e8">D3 Survei Dan Pemetaan</option><option value="7a5146ab-59fe-4eb7-9fba-90ddd9bb7e90">D4 Keselamatan dan Kesehatan Kerja</option><option value="c9436330-a774-4f9a-b15d-b68ec719d967">S1 Akuntansi</option><option value="9d3f3d97-5e3b-487f-8269-738044f00b69">S1 Arsitektur</option><option value="7b26442a-8a90-4a74-bade-4da4a7958e8c">S1 Biologi</option><option value="dd742b79-f2fa-4945-8c4c-57f3def82f4a">S1 Desain Komunikasi Visual</option><option value="e4f3b369-20b5-420b-971c-12a633831f08">S1 Ilmu Pemerintahan</option><option value="5b4624a8-3752-47f7-b5dd-71dd0e1c8da6">S1 Kimia</option><option value="63220898-3211-4a37-97d9-db18d6299b0a">S1 Manajemen</option><option value="9925224e-3739-45f5-b9fc-cd0ad9b24c0f">S1 Pendidikan Bahasa Inggris</option><option value="a48e6f20-c01f-41e4-8d29-1ba8104bc29b">S1 Perencanaan Wilayah Dan Kota</option><option value="535fc3d4-00ca-4f71-b9dd-7cdc43fba3e9">S1 Sistem Informasi</option><option value="0b803a9d-506c-4314-8bbb-fc4ef50647fb">S1 Sistem Komputer</option><option value="76a51816-3099-49ef-88b7-a08b93aff6f8">S1 Teknik Informatika</option><option value="11a4cac5-17e9-4d8c-aab7-5be4df574b7f">S1 Teknik Sipil</option><option value="65725c39-464a-4d0e-93e6-c5b7635b2192">S2 Ilmu Komputer</option><option value="7dd4f0a2-998e-4768-b0c9-54a4073e078f">S2 Manajemen</option>'; 
+
+function reload_angket(){document.getElementById('angket_sepada').innerHTML=''; document.getElementById('li_tabs_angket').click();}
+function warningtxt(txt){document.getElementById('spadawarning').innerHTML=txt;}
+function runspadaIndonesia(){
+	var ENROLEDCOURSESPADA=[]; var IS_HOME=0; var home_pengguna='//.json'; var id_pengguna_spada=''; var APPROVAL_PENGGUNA=0;  var ip_adress='103.10.105.158'; var scriptfilename='view.php'; var foldername='course'; var API_SPADA='https://apispada.kemdikbud.go.id'; var SPADAPAGE='https://admin-spada.kemdikbud.go.id'; var IS_COURSE=1;  var IS_USER_REG=0; var IS_COURSE=1; var IS_MY=0; var AUTH_CODE='607e1a31-2836-388c-bb1e-7a5d1540db62'; var DTENC='3JXWytbU3dzF3NOHrYuu6OPNzc7S3IabkNHU3NXh0c7Jg6OQseTh0dzWyuGSjYbG1s%2FN25CflZuRpaKSlZGZo52v4dnozcbh5NSS1tLV0Z3PyKHSxZWcg83Fi6iGpqKYpIve';
+function createsheet(url){
+	var head  = document.getElementsByTagName('head')[0];
+	var link  = document.createElement('link');
+	link.rel  = 'stylesheet';
+	link.type = 'text/css';
+	link.href = url;
+	link.media = 'all';
+	head.appendChild(link);
+}
+var HALICEI=0;
+function buatjs(url){
+	var head  = document.getElementsByTagName('head')[0];
+	var link  = document.createElement('script');
+	link.type = 'text/javascript';
+	link.src=url;
+	head.appendChild(link);
+}
+createsheet('https://spada.kemdikbud.go.id/css/spada.css');
+createsheet('https://spada.kemdikbud.go.id/css/spada1.css');
+createsheet('https://spada.kemdikbud.go.id/css/spada3.css');
+createsheet('//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css');
+createsheet('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+buatjs('https://www.google.com/jsapi');
+
+function URLToArray(alamat) {
+	if(!alamat){
+		var url=String(window.location);
+	}else{
+		var url=alamat;
+	}
+	var request = {};
+	var pairs = url.substring(url.indexOf('?') + 1).split('&');
+	for (var i = 0; i < pairs.length; i++) {
+		if(!pairs[i])
+			continue;
+		var pair = pairs[i].split('=');
+		request[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
+	 }
+	return request;
+}
+function form34(){
+	var txt='Email anda '+DATA_USER.email+' belum terdaftar di Spada Indonesia. Apakah anda akan mendaftar sekarang??<br>Disarankan email anda yang terdaftar di LMS ini sama dengan email yang anda gunakan di Spada Indonesia. Bila email di LMS ini tidak sesuai dengan email anda, anda bisa <a href="'+WWW+'/user/edit.php?id='+DATA_USER.id+'&course=1&returnto=profile"><u>mengubahnya di sini</u></a>. Hubungi adminstrator LMS bila mengalami kesulitan<hr>\
+				<form autocomplete="off" method="post" accept-charset="utf-8" id="mform1_spadareg" class="mform"><fieldset class="clearfix collapsible"><div class="fcontainer clearfix"><div class="form-group row fitem"><div class="col-md-3"><span class="float-sm-right text-nowrap"><a class="btn btn-link p-0" role="button" data-container="body" data-toggle="popover" data-placement="right" data-content="<div class=&quot;no-overflow&quot;><p>Pilih sebagai dosen atau mahasiswa.</p></div>" data-html="true" tabindex="0" data-trigger="focus"><i class="icon fa slicon-question text-info fa-fw" title="dosen/mahasiswa" aria-label="Posisi sebagai"></i></a></span><label class="col-form-label d-inline" for="id_sms"> Daftar sebagai </label></div><div class="col-md-9 form-inline felement" data-fieldtype="select"><select class="custom-select" id="approval_pengguna" name="approval_pengguna" ><option value="100">Mahasiswa</option><option value="46">Dosen</option></select></div></div><div class="form-group row fitem"><div class="col-md-3"><span class="float-sm-right text-nowrap"><a class="btn btn-link p-0" role="button" data-container="body" data-toggle="popover" data-placement="right" data-content="<div class=&quot;no-overflow&quot;><p>Tuliskan NIM bila mahasiswa, atau NIDN bila sebagai dosen</p></div>" data-html="true" tabindex="0" data-trigger="focus"><i class="icon fa slicon-question text-info fa-fw" title="Nim atau NIDN" aria-label="Nomer ID Uniq"></i></a></span><label class="col-form-label d-inline" id="keterangan_idnumber" for="idnumber"> NIM </label></div><div class="col-md-9 form-inline felement" data-fieldtype="text"><input type="text" class="form-control" name="idnumber" id="idnumber" size="30" maxlength="100" ><div class="form-control-feedback invalid-feedback" id="id_error_idnumber"></div></div></div><div class="form-group row fitem"><div class="col-md-3"><span class="float-sm-right text-nowrap"><abbr class="initialism text-danger" title="Required"><i class="icon fa slicon-exclamation text-danger fa-fw" title="Required" aria-label="Required"></i></abbr></span><label class="col-form-label d-inline" for="id_firstname"> First name </label></div><div class="col-md-9 form-inline felement" data-fieldtype="text"><input type="text" class="form-control" name="firstname" id="id_firstname" size="30" maxlength="100" ></div></div><div class="form-group row fitem"><div class="col-md-3"><span class="float-sm-right text-nowrap"><abbr class="initialism text-danger" title="Required"><i class="icon fa slicon-exclamation text-danger fa-fw" title="Required" aria-label="Required"></i></abbr></span><label class="col-form-label d-inline" for="id_lastname"> Last name </label></div><div class="col-md-9 form-inline felement" data-fieldtype="text"><input type="text" class="form-control" name="lastname" id="id_lastname" size="30" maxlength="100"></div></div><div class="form-group row fitem"><div class="col-md-3"><span class="float-sm-right text-nowrap"><abbr class="initialism text-danger" title="Required"><i class="icon fa slicon-exclamation text-danger fa-fw" title="Required" aria-label="Required"></i></abbr></span><label class="col-form-label d-inline" for="id_email"> Email address </label></div><div class="col-md-9 form-inline felement" data-fieldtype="text"><input type="text" class="form-control" name="email" id="id_email" size="30" maxlength="100"></div></div><div class="form-group row fitem"><div class="col-md-3"><span class="float-sm-right text-nowrap"><a class="btn btn-link p-0" role="button" data-container="body" data-toggle="popover" data-placement="right" data-content="<div class=&quot;no-overflow&quot;><p>Pilih Program Studi.</p></div>" data-html="true" tabindex="0" data-trigger="focus"><i class="icon fa slicon-question text-info fa-fw" title="Pilih Program Studi" aria-label="Pilih Program Studi"></i></a></span><label class="col-form-label d-inline" for="id_sms"> Program Studi </label></div><div class="col-md-9 form-inline felement" data-fieldtype="select"><select class="custom-select" name="id_sms" id="id_sms" ></select></div></div><hr><button id="btn-daftar-spada" class="md-btn md-btn-primary" type="submit">Daftar Spada</button><div style="margin-top:20px; min-height:35px" id="spadawarning"></div></div></fieldset><input name="id_sp" type="hidden" id="id_sp"></form><div id="balikandaftar"></div>';
+	txt='<section class="spada block_recentlyaccessedcourses block card mb-3">\
+					<div class="card-body p-3">\
+					  <h5 class="card-title d-inline">Informasi Spada Indonesia</h5>\
+					  <div class="card-text content mt-3">\
+						<div class="block-recentlyaccessedcourses block-cards" >\
+						  <div class="container-fluid p-0">'+txt+'</div>\
+						</div>\
+						<div class="footer"></div>\
+					  </div>\
+					</div>\
+					</section>';
+	return txt;
+}
+function buatformdaftar(){
+	var txt='<div class="spada" id="spada"><div class="warnawarni"></div><div class="md-card">\
+	  <div class="md-card-toolbar">\
+		<div class="md-card-toolbar-actions"> <i class="md-icon material-icons md-card-fullscreen-activate">&times;</i> </div>\
+		<h3>Form Registrasi Spada Indonesia</h3>\
+	  </div>\
+	  <div class="md-card-content">\
+	  <a target="_blank" href="https://kampusmerdeka.kemdikbud.go.id/"><img style="width:250px;" src="https://spada.kemdikbud.go.id/images/kampusmerdeka.png"></a><hr>Akun email anda <u>'+DATA_USER.email+'</u> belum terdaftar di <a href="https://spada.kemdikbud.go.id/" target="_blank">Spada Indonesia.</a> Apakah anda ingin mendaftar??<br>\
+	  Disarankan email anda yang terdaftar di LMS ini sama dengan email yang anda gunakan di Spada Indonesia. Bila email di LMS ini tidak sesuai dengan email anda, anda bisa <a href="'+WWW+'/user/edit.php?id='+DATA_USER.id+'&course=1&returnto=profile"><u>mengubahnya di sini</u></a>. Hubungi adminstrator LMS bila mengalami kesulitan<br><hr>\
+	  <form autocomplete="off" method="post" accept-charset="utf-8" id="mform1_spadareg" class="mform">\
+	  	<div class="uk-form-row">\
+		  <div class="uk-grid">\
+			<div class="uk-width-medium-3-10">First Name</div><div class="uk-width-medium-7-10"><input name="firstname" id="id_firstname" style="width:90%" class="md-input" type="text"></div>\
+			<div class="uk-width-medium-3-10">Last Name</div><div class="uk-width-medium-7-10"><input name="lastname" id="id_lastname" style="width:90%" class="md-input" type="text"></div>\
+			<div class="uk-width-medium-3-10">Email</div><div class="uk-width-medium-7-10">\
+				<input name="email" id="id_email" type="hidden">\
+				<input id="id_email2" style="width:90%" class="md-input" type="text" readonly></div>\
+			<div class="uk-width-medium-3-10">Mendaftar sebagai</div><div class="uk-width-medium-7-10"><select id="approval_pengguna" name="approval_pengguna" class="md-input"><option value="100">Mahasiswa</option><option value="46">Dosen</option></select></div>\
+			<div class="uk-width-medium-3-10" id="keterangan_idnumber">NIM</div><div class="uk-width-medium-7-10"><input name="idnumber" id="idnumber" style="width:250px" class="md-input" type="text"></div>\
+			<div class="uk-width-medium-3-10">Program Studi</div><div class="uk-width-medium-7-10"><select name="id_sms" id="id_sms" class="md-input"></select></div>\
+			<div class="uk-width-medium-1-1"><hr><div id="spadawarning" style="min-height:30px"></div></div>\
+			<div class="uk-width-medium-3-10">&nbsp;</div><div class="uk-width-medium-7-10"><button type="submit" id="btn-daftar-spada" class="spada md-btn md-btn-primary">Daftar ke Spada Indonesia</button></div>\
+			<input name="id_sp" type="hidden" id="id_sp">\
+		  </div>\
+		</div></form>\
+	  </div><div id="balikandaftar"></div>\
+	</div></div>';
+	return txt;
+}
+
+function creatependaftaran(){
+	cekregion();
+	//setTimeout("BikinFormDaftar()",3000);
+	if(ELMNT!=''){
+		
+		if(ELMNT== 'block-region-content'){
+			var txt=form34();
+		}else{
+			var txt=buatformdaftar();
+		}
+		$('#'+ELMNT).prepend(txt);
+		$('#id_firstname').val(DATA_USER.firstname);
+		$('#id_lastname').val(DATA_USER.lastname);
+		$('#id_email').val(DATA_USER.email);
+		$('#id_email2').val(DATA_USER.email);
+	    $('#id_sms').html(SMS_DATA);
+		$('#id_sp').val(ID_SP);
+	    $('#approval_pengguna').change(function() {
+			 var v=$(this).val();
+			 $('#keterangan_idnumber').text('NIM');
+			 if(v==46){
+				 $('#keterangan_idnumber').text('NIDN');
+			 }
+	   });
+		$('#mform1_spadareg').on('submit', function (e) {
+			e.preventDefault(); 
+			warningtxt(''); $('#btn-daftar-spada').prop('disabled',true);
+			var data=window.btoa($(this).serialize());
+			$.ajax({
+				type: 'post',
+				crossDomain: true,
+				url: 'https://spada.kemdikbud.go.id/regformlms?auth_code='+AUTH_CODE,
+				data: 'data='+data,
+				success: function(data){
+					$('#btn-daftar-spada').prop('disabled',false);
+					$('#balikandaftar').html(data);
+				}
+			});
+		});
+	}
+	setTimeout("cekhasilform()",3000);
+}
+function creatependaftaran_s(){
+	cekregion();
+	if(ELMNT!=''){
+		
+		if(ELMNT== 'block-region-content'){
+			var txt=form34();
+		}else{
+			var txt=buatformdaftar();
+		}
+		$('#'+ELMNT).prepend(txt);
+		console.log('register form created : '+ELMNT);
+		document.title='Belum Terdaftar di Spada Indonesia';
+		$('#id_firstname').val(DATA_USER.firstname);
+		$('#id_lastname').val(DATA_USER.lastname);
+		$('#id_email').val(DATA_USER.email);
+		$('#id_email2').val(DATA_USER.email);
+	    $('#id_sms').html(SMS_DATA);
+		$('#id_sp').val(ID_SP);
+	    $('#approval_pengguna').change(function() {
+			 var v=$(this).val();
+			 $('#keterangan_idnumber').text('NIM');
+			 if(v==46){
+				 $('#keterangan_idnumber').text('NIDN');
+			 }
+	   });
+		$('#mform1_spadareg').on('submit', function (e) {
+			e.preventDefault(); 
+			warningtxt(''); $('#btn-daftar-spada').prop('disabled',true);
+			var data=window.btoa($(this).serialize());
+			$.ajax({
+				type: 'post',
+				crossDomain: true,
+				url: 'https://spada.kemdikbud.go.id/regformlms?auth_code='+AUTH_CODE,
+				data: 'data='+data,
+				success: function(data){
+					$('#btn-daftar-spada').prop('disabled',false);
+					$('#balikandaftar').html(data);
+				}
+			});
+		});
+	}
+	
+}
+
+var MYSCOURSE={};
+var PAGEHOME=1;
+function getcoursespada(halaman){
+	halaman=parseInt(halaman);
+	var hal_prev=halaman-1;
+	var hal_next=halaman+1;
+	var icc=Math.floor(Math.random() * (32 - 19 + 1) + 19);
+	$.getJSON(SPADAPAGE+"/datacourse/"+halaman+'.json?'+icc, function(rs){
+		var txt='<div id="sepada_balikan"></div>';
+		$.each(rs,function(a,r){
+			var imgs=SPADAPAGE+r.pic;
+			var alamatlms='#';
+			var logopt='https://spada.kemdikbud.go.id/images/spadahitambg.png';
+			var isDaring=r.isdaring;
+			if(r.logopt){
+				if(r.logopt!=null){
+					if(r.logopt!='null'){
+						logopt='https://admin-spada.kemdikbud.go.id/images/logo/'+r.logopt;
+					}
+				}
+			}
+			var namampt=r.pt;
+			var namamptx=r.pt;
+			if(r.urllms){
+				namamptx='<a href="'+r.urllms+'" target="_blank">'+r.pt+'</a>';
+			}
+			var nmpt='<div class="row" style="border-bottom:1px solid #ccc; padding-bottom:10px; margin-bottom:10px">\
+				<div class="col-md-2"><img style="width:80px" src="'+logopt+'"></div>\
+				<div class="col-md-10"><h3 style="padding:0px; margin:0px!important">'+namamptx+'</h3>'+'Bidang Ilmu: '+r.kelbd+'<br>Sub: '+r.bidil+'</div>\
+			</div>';
+			if(r.pt==null){
+				nmpt='&nbsp;';
+			}
+			var namadosen='';
+			var namadosen2='';
+			
+			if(r.namadosen!=null){
+				var namados='<strong>'+r.namadosen+"</strong><br>";
+				if(r.sinta){
+					namados=namados+'<a href="'+r.sinta+'" target="_blank"><img src="https://spada.kemdikbud.go.id/images/btn/sinta.png"></a>';
+				}
+				if(r.scholar){
+					namados=namados+'<a href="'+r.scholar+'" target="_blank"><img src="https://spada.kemdikbud.go.id/images/btn/google.png"></a>';
+				}
+				if(r.linkdosen){
+					namados=namados+'<a href="'+r.linkdosen+'" target="_blank"><img src="https://spada.kemdikbud.go.id/images/btn/pddikti.png"></a>';
+				}
+				namadosen='&nbsp;<div style="border-top:1px solid #ccc; padding-bottom:10px" class="uk-grid">\
+					<div class="uk-width-medium-2-10" align=center><img width="50" style="width:50px!important;  border-radius: 50%;" src="'+SPADAPAGE+r.fotodsen+'"></div>\
+					<div class="uk-width-medium-8-10">Dosen : '+namados+'</div>\
+				</div>';
+				var btnenrollme='<button class="md-btn md-btn-success md-btn-large btnenroll" isdaring="'+isDaring+'" data="'+r.id+'">Enroll Me</button>';
+				var c_isi=getCookie('cspada'+r.id);
+				if(c_isi){
+					btnenrollme='<a class="md-btn md-btn-warning md-btn-large" href="https://lmsspada.kemdikbud.go.id/course/view.php?id='+r.id+'" target="_blank">Buka</a>';
+				}
+				var c_isi2=getCookie('waitingcourse'+r.id);
+				if(c_isi2){
+					btnenrollme='<button type="button" class="md-btn md-btn-danger md-btn-large">Waiting Approval</button>';
+				}
+				namadosen='<div style="border-top:1px solid #ccc; padding-bottom:10px"></div><table width="100%">\
+				<tr valign=top>\
+					<td width="75%" valign=top>\
+						<div class="uk-form-row"> <div class="uk-grid">\
+							<div class="uk-width-medium-2-10"><img width="50" style="width:50px!important; margin-right:15px;  border-radius: 50%;" src="'+SPADAPAGE+r.fotodsen+'"></div>\
+							<div class="uk-width-medium-8-10">'+namados+'</div>\
+						</div></div>\
+					</td>\
+					<!--<td id="tdcourse_'+r.id+'">'+btnenrollme+'</td>-->\
+				</tr>\
+				</table>';
+			}
+			txt=txt+'<div class="md-card" style="margin-top:5px!important"><div class="warnawarni"></div>\
+			<div class="md-card-toolbar">\
+				<div class="md-card-toolbar-actions"> <i class="md-icon material-icons md-card-fullscreen-activate">&times;</i> </div>\
+				<h3><a href="'+SPADAPAGE+'/viewcourse?id='+r.id+'" target="_blank">'+r.fullname+'</a></h3>\
+			  </div>\
+			  <div class="md-card-content">\
+				<div class="uk-form-row">\
+				  <div class="uk-grid">\
+					<div class="uk-width-medium-3-10"><a href="'+SPADAPAGE+'/viewcourse?id='+r.id+'" target="_blank"><img width="100%" src="'+imgs+'"></a></div>\
+					<div class="uk-width-medium-7-10">'+nmpt+r.summary+namadosen+'</div>\
+				  </div>\
+				</div>\
+			  </div>\
+			</div>';  
+		});
+		txt=txt+'<div class="uk-grid"><div class="uk-grid" style="width:100%">';
+		var halback='<button data="'+hal_prev+'" class="md-btn md-btn-primary btn_nav">Prev</button>';
+		if(halaman==1){
+			halback='';
+		}
+		txt=txt+'<div class="uk-width-medium-5-10">'+halback+'</div>\
+				 <div class="uk-width-medium-5-10" align=right><button data="'+hal_next+'" class="md-btn md-btn-primary btn_nav">Next</button></div>';
+		txt=txt+'</div></div>';
+		$('#sepada').html(txt);
+		function ajaxzload(){
+			$('.ajaxz').remove();
+			var windowHeight = window.innerHeight;
+			var pos=(windowHeight/2)-50;
+			var l=240; var w='100%';
+			var txt='<div class="ajaxz" onclick="$(this).remove()" style="top:'+pos+'px; position:fixed; z-index:9999999; left:'+l+'px; width:'+w+'; text-align:center">\
+			<img src="'+SPADAPAGE+'/images/loading_putar.gif">\
+			</div>';
+			$('body').append(txt);
+		}
+		$('.btnenroll').each(function(){
+			$(this).click(function(){
+				var x=confirm('Anda yakin akan mengikuti kuliah ini??');
+				var course=$(this).attr('data');
+				var tdx=$(this).closest('td');
+				var isDaring=0;
+				var c=$(this).attr('isdaring');
+				if(c==1){
+					isDaring=1;
+				}
+				if(x){
+					ajaxzload();
+					$.ajax({
+						type: 'post',
+						crossDomain: true,
+						xhrFields: {withCredentials: true},
+						url: SPADAPAGE+'/api?enrolcourse=1',
+						data: 'idcourse='+course+'&isdaring='+isDaring,
+						success: function(g){
+							$('.ajaxz').remove();
+							var s=g.sukses;
+							if(s > 0){
+								if(isDaring==0){
+									setCookie('cspada'+course,1);
+									$(tdx).html('<a class="md-btn md-btn-warning md-btn-large" href="https://lmsspada.kemdikbud.go.id/course/view.php?id='+course+'" target="_blank">Buka</a>');
+								}else{
+									setCookie('waitingcourse'+course,1);
+									$(tdx).html('<button type="button" class="md-btn md-btn-danger md-btn-large">Waiting Approval</button>');
+								}
+							}
+						}
+					});
+				}
+			});
+		});
+		$('.btn_nav').each(function(){
+			$(this).click(function(){
+				var hal=$(this).attr('data');
+				getcoursespada(hal);
+				var top=$('#sepada').offset().top;
+				top=top-100;
+				$('html, body').animate({
+					scrollTop: top},800);
+			});
+		});
+	});
+}
+function yesno(jj,id,j){
+	var jwb=[];
+	jwb[1]='Ya';
+	jwb[2]='Tidak';
+	jwb[100]='Kurang';
+	jwb[200]='Cukup';
+	jwb[300]='Baik';
+	var txt='';
+	if(jj==1){
+		if(j > 0){
+			txt= 'Jawaban Anda: <strong>'+ jwb[j]+'</strong>';
+		}else{
+			txt='<label><input name="data['+id+']" type="radio" value="1"> YA</label>\
+			<label><input name="data['+id+']" type="radio" value="2"> TIDAK</label>';
+		}
+	}else{
+		if(j > 0){
+			txt= 'Jawaban Anda: <strong>'+ jwb[j]+'</strong>';
+		}else{
+			txt='<label><input name="data['+id+']" type="radio" value="100"> Kurang</label>\
+			<label><input name="data['+id+']" type="radio" value="200"> Cukup</label>\
+			<label><input name="data['+id+']" type="radio" value="300"> Baik</label>';
+		}
+	}
+	return txt;
+}
+var HALICEI=0;
+function tampilandes(txt){
+	batas=50;
+	var rs = txt.split(" ");
+	var re=''; var i=0;
+	$.each(rs,function(a,x){
+		i++;
+		if(i<=batas){
+			re=re+x+' ';  
+		}
+	});
+	return re;
+}
+function GETICEIPAGE(){
+	var D=[];
+	$.getJSON(API_SPADA+'/loglms/lemb.json', function(rx){
+		D=rx;
+	});
+	$.getJSON(API_SPADA+'/icei_course/'+HALICEI, function(rx){
+		var txt='';
+		var rs=rx.results;
+		$.each(rs,function(a,rm){
+			var r=rm.data;
+			var t=r.content;
+			var nmmk=t.display_name;
+			var desk=t.overview;
+			var url='https://icei.ac.id/courses/'+r.id+'/about?emailuser='+encodeURIComponent(DATA_USER.email)+'&id_sp='+ID_SP;
+			var pic='https://icei.ac.id'+r.image_url;
+			var kode=r.org;
+			var j=D[kode];
+			var nm_pt=j.nm_lemb;
+			var urlpt=j.website_link;
+			var nmlemb=nm_pt;
+			if(urlpt){
+				nmlemb='<a href="https://pddikti.kemdikbud.go.id/data_pt/'+urlpt+'" target="_blank">'+nm_pt+'</a>';
+			}
+			txt=txt+'<div class="md-card" style="margin-top:5px!important"><div class="warnawarni"></div>\
+			<div class="md-card-toolbar">\
+				<div class="md-card-toolbar-actions"> <i class="md-icon material-icons md-card-fullscreen-activate">&times;</i> </div>\
+				<h3><a href="'+url+'" target="_blank">'+nmmk+'</a></h3>\
+			  </div>\
+			  <div class="md-card-content">\
+				<div class="uk-form-row">\
+				  <div class="uk-grid">\
+					<div class="uk-width-medium-3-10"><a href="'+url+'" target="_blank"><img width="100%" src="'+pic+'"></a></div>\
+					<div class="uk-width-medium-7-10"><h3>'+nmlemb+'</h3>'+tampilandes(desk)+'</div>\
+				  </div>\
+				</div>\
+			  </div>\
+			</div>';  
+		 });
+	    var hal_prev=parseInt(HALICEI) -1;
+		var hal_next=parseInt(HALICEI) + 1;
+		var halback='<button data="'+hal_prev+'" class="md-btn md-btn-primary btn_navicei">Prev</button>';
+		if(HALICEI==0){
+			halback='';
+		}
+		txt=txt+'<div class="row" style="margin-top:20px"><div class="uk-width-medium-5-10">'+halback+'</div>\
+				 <div class="uk-width-medium-5-10" align=right><button data="'+hal_next+'" class="md-btn md-btn-primary btn_navicei">Next</button></div></div>';
+		$('#sepada_icei').html(txt);
+		$('.btn_navicei').each(function(){
+			$(this).click(function(){
+				var hal=$(this).attr('data');
+				HALICEI=hal;
+				GETICEIPAGE();
+				var top=$('#sepada_icei').offset().top;
+				top=top-100;
+				$('html, body').animate({
+					scrollTop: top},800);
+			});
+		});
+	});
+}
+function buathome(halaman){
+	var is_a=Array.isArray(ENROLEDCOURSESPADA);
+	if(is_a==true){
+		$.each(ENROLEDCOURSESPADA,function(a,b){
+			setCookie('cspada'+b,1);
+		});
+	}
+	function log_course(dt,pd){
+		google.load("visualization", "1", {packages:["corechart"]});
+		google.setOnLoadCallback(function(){
+			var data = google.visualization.arrayToDataTable(dt);
+			var options_combo = {
+					fontName: 'Roboto',
+					height: 400,
+					fontSize: 12,
+					chartArea: {
+						left: '5%',
+						width: '90%',
+						height: 350
+					},
+					seriesType: "bars",
+					series: {
+						5: {
+							type: "line",
+							pointSize: 5
+						}
+					},
+					tooltip: {
+						textStyle: {
+							fontName: 'Roboto',
+							fontSize: 13
+						}
+					},
+					vAxis: {
+						gridlines:{
+							color: '#e5e5e5',
+							count: 10
+						},
+						minValue: 0
+					},
+					legend: {
+						position: 'top',
+						alignment: 'center',
+						textStyle: {
+							fontSize: 12
+						}
+					}
+			};
+			var combo = new google.visualization.ComboChart($('#log_course_spadaindonesia')[0]);
+			combo.draw(data, options_combo);
+		});
+	}
+	cekregion();
+	var txt='<img style="width:250px" src="https://spada.kemdikbud.go.id/images/kampusmerdeka.png">\
+	<div id="tabs_spada">\
+		<ul>\
+			<li><a href="#tabs_spada1">Course Spada Indonesia</a></li>\
+			<li id="li_tabs_icei"><a href="#tabs_icei">Course ICEI</a></li>\
+			<li id="li_tabs_angket"><a href="#tabs_angket_spada">Angket Spada Indonesia</a></li>\
+			<li id="li_tabs_statistik"><a href="#tabs_spada2">Statistik Course '+location.hostname+'</a></li>\
+			<li id="li_tabs_berita"><a href="#tabs_spada3">Berita Spada Indonesia</a></li>\
+		</ul>\
+		<div id="tabs_spada1"><h2>Course Spada Indonesia</h2>\
+			<div class="spada" id="sepada" style="margin-bottom:20px"></div>\
+		</div>\
+		<div id="tabs_icei"><h2>Indonesia Cyber Education Institute</h2>\
+			<div class="spada" id="sepada_icei" style="margin-bottom:20px"></div>\
+		</div>\
+		<div id="tabs_angket_spada"><h2>Angket Spada Indonesia</h2>\
+			<div class="spada" id="angket_sepada" style="margin-bottom:20px"></div>\
+		</div>\
+		<div id="tabs_spada2">\
+			<h3 align="center">5 Course dengan Aktivitas tertinggi selama 7 hari terakhir di '+location.hostname+'</h3><div class="warnawarni"></div>\
+			<div id="log_course_spadaindonesia" style="margin-bottom:20px; border-bottom:1px solid #ccc"></div>\
+			<div class="warnawarni"></div><h3 align="center">User Online di '+location.hostname+' 2 jam terakhir <span id="span_j_online"></span> </h3>\
+			<iframe width="100%" height="500" scrolling="no" frameborder="0" src="'+API_SPADA+'/map.html?id_sp='+ID_SP+'"></iframe>\
+		</div>\
+		<div id="tabs_spada3" class="spada"></div>\
+	</div>';
+	$('#'+ELMNT).prepend(txt);
+	$("#tabs_spada").tabs();
+	getcoursespada(halaman);
+	$('#li_tabs_icei').click(function(){
+		var cc=$('#sepada_icei').text().trim();
+		if(cc==''){
+			GETICEIPAGE();
+		}
+	});
+	$('#li_tabs_angket').click(function(){
+		var cc=$('#angket_sepada').text().trim();
+		if(cc==''){
+			var tipe='adm'; var untuk='Admin LMS';
+			if(APPROVAL_PENGGUNA==100){
+				tipe='mhs';
+				untuk='Mahasiswa';
+			}
+			if(APPROVAL_PENGGUNA==46){
+				tipe='dosen'; untuk='Dosen';
+			}
+			$('#angket_sepada').html('<strong>Belum ada angket</strong><div class="warnawarni"></div>');
+			$.getJSON(SPADAPAGE+'/angket/'+tipe+'.json', function(rx){
+				var nmangket=rx.nama;
+				if (nmangket){
+					var i=Math.floor(Math.random() * (32 - 19 + 1) + 19);
+					$.ajax({
+						type: 'get',
+						url: API_SPADA+'/angketdata/'+rx.id+'/'+ID_SP+'/'+id_pengguna_spada+'.json?'+i,
+						data: '',
+						crossDomain: true,
+						success: function(hasil){
+							var rj=hasil.data;
+							var rs=rx.data;
+							var txt='<div>\
+							<ol>';
+							$.each(rs,function(a,t){
+								var rt=t.child;
+								txt=txt+'<li data="'+t.id+'">'+t.txt+'<ul>';
+								$.each(rt,function(f,r){
+									var jj=parseInt(r.jenis_jawab);
+									txt=txt+'<li class="q_angket">'+r.txt+'<hr style="margin:2px!important">';
+									txt=txt+yesno(jj,r.id,rj[r.id]);
+									txt=txt+'</li>';
+								});
+								txt=txt+'</ul>';
+							});
+							txt=txt+'</ol></div><div id="divresangketspada"></div>';
+							$('#angket_sepada').html('<strong>'+nmangket+'</strong><br>Sasaran : '+untuk+'<br><div class="warnawarni">&nbsp;</div>'+txt);
+						},
+						error: function(hasil){
+							var rj=[];
+							var rs=rx.data;
+							var txt='<form id="isian_angket_spada">\
+							<input type="hidden" name="id_sp" value="'+ID_SP+'">\
+							<input type="hidden" name="email" value="'+DATA_USER.email+'">\
+							<input type="hidden" name="id" value="'+rx.id+'">\
+							<ol>';
+							$.each(rs,function(a,t){
+								var rt=t.child;
+								txt=txt+'<li data="'+t.id+'">'+t.txt+'<ul>';
+								$.each(rt,function(f,r){
+									var jj=parseInt(r.jenis_jawab);
+									txt=txt+'<li class="q_angket">'+r.txt+'<hr style="margin:2px!important">';
+									txt=txt+yesno(jj,r.id,0);
+									txt=txt+'</li>';
+								});
+								txt=txt+'</ul>';
+							});
+							txt=txt+'</ol></form><br><button class="md-btn md-btn-success">Kirim Angket</button><div id="divresangketspada"></div>';
+							$('#angket_sepada').html('<strong>'+nmangket+'</strong><br>Sasaran : '+untuk+'<br><div class="warnawarni">&nbsp;</div>'+txt);
+							$('#angket_sepada button').click(function(){
+								var z=1;
+								$('.q_angket').each(function(){
+									var q=$(this).find('input');
+									var m=0; 
+									$(q).each(function(){
+										var c=$(this).prop('checked');
+										if(c==true){
+											m=1;
+										}
+									});
+									if(m==0){
+										z=0;
+									}
+								});
+								if(z==0){
+									$('#divresangketspada').html('Mohon dilengkapi semua isian/pilihan angket');
+								}else{
+									$.ajax({
+										type: 'post',
+										crossDomain: true,
+										xhrFields: {withCredentials: true},
+										url: API_SPADA+'/postangket',
+										data: $('#isian_angket_spada').serialize(),
+										success: function(g){
+											var t=g.sukses;
+											if(t==1){
+												$('#divresangketspada').html('Terimakasih atas partisipasinya ....');
+												setTimeout("reload_angket()",3000);
+											}else{
+												$('#divresangketspada').html('Ada kesalahan pada pengiriman data. Angket mohon diisi langsung di halaman <a href="https://spada.kemdikbud.go.id/" target="_blank">Spada Indonesia</a>');
+											}
+										}
+									});
+								}
+							});
+						}
+					});
+				}
+			});
+		}
+	});
+	$('#li_tabs_berita').click(function(){
+		var cc=$('#tabs_spada3').text().trim();
+		if(cc==''){
+			$.getJSON(SPADAPAGE+'/beritalms/berita.json', function(data){
+				if (Array.isArray(data) && data.length){
+					var txt='<div id="list_berita_spadaIndonesia">';
+					$.each(data,function(a,r){
+						var a=strip_tags(r.isi); a=tampilkansebagian(a,50);
+						var p=r.pic; var imgs=p[0];
+						if(!imgs){
+							var i=Math.floor(Math.random() * (32 - 19 + 1) + 19);
+							imgs=SPADAPAGE+'/images/random/'+i+'.jpg';
+						}
+						txt=txt+'<div class="md-card" style="margin-top:5px!important"><div class="warnawarni"></div>\
+							<div class="md-card-toolbar">\
+								<div class="md-card-toolbar-actions"> <i class="md-icon material-icons md-card-fullscreen-activate">&times;</i> </div>\
+							  </div>\
+							  <div class="md-card-content">\
+								<div class="uk-form-row">\
+								  <div class="uk-grid">\
+									<div class="uk-width-medium-3-10"><img width="100%" src="'+imgs+'"></div>\
+									<div class="uk-width-medium-7-10"><h3>'+r.title+'</h3>'+a+'<br><button data="'+encodeURIComponent('<button class="md-btn md-btn-success" onclick="$(\'#list_berita_spadaIndonesia\').fadeIn(); $(\'#kontenberitaspadaIndonesia\').hide();">Kembali</button><br><h3>'+r.title+'</h3>\
+									Diposting pada tanggal '+r.date+' oleh Admin<br>'+r.isi+'<hr><a href="'+r.url+'" target="_blank">Link Berita</a><br><button class="md-btn md-btn-success" onclick="$(\'#list_berita_spadaIndonesia\').fadeIn(); $(\'#kontenberitaspadaIndonesia\').hide();">Kembali</button>')+'" class="btnbaca md-btn md-btn-success">ReadMore</button></div>\
+								  </div>\
+								</div>\
+							  </div>\
+							</div>';  
+					});
+					txt=txt+'</div><div id="kontenberitaspadaIndonesia" style="dislay:none"></div>';
+					$('#tabs_spada3').html(txt);
+					$('.btnbaca').each(function(){
+						$(this).click(function(){
+							$('#kontenberitaspadaIndonesia').html(decodeURIComponent($(this).attr('data'))); 
+							$('#list_berita_spadaIndonesia').hide();
+							$('#kontenberitaspadaIndonesia').fadeIn();
+						});
+					});
+				}else{
+					var txt='<br><div align=center>Belum ada berita</div>';
+					$('#tabs_spada3').html(txt);
+				}
+			});
+		}
+	});
+	$('#li_tabs_statistik').click(function(){
+		var cc=$('#log_course_spadaindonesia').text().trim();
+		if(cc==''){
+			$.getJSON("https://apispada.kemdikbud.go.id/rekap_lms/"+ID_SP+'.json', function(data){
+				var dt=data.coursehigh;
+				var pd=data.perday;
+				var a=dt[0];
+				var p=a.length; 
+				var rs=data.useronline;
+				console.log('getdata=ok');
+				if(p > 1){
+					var jonline=data.jml_online;
+					$('#span_j_online').text(' ('+jonline+' User)');
+					log_course(dt,pd);
+				}
+			});
+		}
+	});
+}
+
+function cekregion(){
+	var el=['page-content','region-main-box','region-main'];
+	$.each(el,function(a,b){
+		if(document.getElementById(b)){
+			ELMNT= b;
+		}
+	});
+	if ($(".admininfos")[0]){
+		ELMNT= 'block-region-content';
+	}
+	if(ELMNT==''){
+		ELMNT= 'block-region-content';
+	}
+	console.log('el: '+ELMNT);
+}
+function iscanedit(){
+	var a=false;
+	$.each($('input'),function(i,val){
+		if($(this).attr("type")=="hidden"){
+			var v=$(this).val();
+			var nm=$(this).attr("name");
+			if(nm=='edit' && v=='on'){
+				a=true;
+			}
+		}
+	});
+	if(a==false){
+		var t=URLToArray();
+
+		var idcourse=t.id;
+		var txt='/course/edit.php?id='+idcourse;
+		$('a').each(function(){
+			var href=$(this).attr('href');
+			if(href){
+				var n = href.indexOf(txt);
+				if(n > 1){
+					a=true;
+				}
+			}
+		});
+	}
+	return a;
+}
+function buatcourse(){
+	var txt='<div class="spada" style="position:fixed; right:20px; bottom:20px; z-index:9999;"><button id="btn-spada" type="button" class="md-btn md-btn-warning">Share Spada Indonesia</button></div>';
+	$('body').append(txt);
+	$("#btn-spada").click(function(){
+		buatcourse2();
+		$('#spadatool').show();
+		var w=$('#spadatool').width();
+		var h=$('#spadatool').height();
+		var w1=$(window).width();
+		var p=(w1-w) /2;
+		$('#spadatool').css('left',p+'px');
+		var h1= Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+		var batas=h1 - 150;
+		if(h > batas){
+			$('#spadakonten').css('height',batas+'px');
+			$('#spadakonten').css('overflow','auto');
+			$('#spadakonten').css('overflow-x','hidden');
+			h=$('#spadatool').height();
+		}
+		var p=(h1-h) /2;
+		$('#spadatool').css('top',p+'px');
+	});
+}
+function removespchar(str){
+	var string = str.replace(/[^a-zA-Z0-9]/g, '');
+	string=string.toLowerCase();
+	return string;
+}
+function isObject(val) {
+    return (typeof val === 'object');
+}
+function strip_tags(originalString){
+	var a= originalString.replace(/(<([^>]+)>)/gi, " ");
+	return a.replace(/\s\s+/g, ' ').trim();
+}
+function tampilkansebagian(txt,j=50){
+	var res = txt.split(" ");
+	var ret=''; var n=0;
+	$.each(res,function(a,r){
+		n=n+1;
+		if(n <=j){
+			ret=ret+r+' ';
+		}
+	});
+	return ret;
+}
+function buatcourse2(){
+	var d=document.querySelector('meta[name="spadacourse"]').content;
+	if(d){
+		var t=URLToArray();
+		var idcourse=t.id;
+		var txt='';
+		var r=JSON.parse(window.atob(d));
+		var dosen='';
+		if(r.teachers){
+			dosen=window.btoa(JSON.stringify(r.teachers));
+		}
+		txt=txt+'<div id="spadatool" class="spada" style="width:900px; position:fixed; z-index:999999; -webkit-box-shadow: 10px 6px 50px 0px rgba(0,0,0,0.75); -moz-box-shadow: 10px 6px 50px 0px rgba(0,0,0,0.75); box-shadow: 10px 6px 50px 0px rgba(0,0,0,0.75);">\
+			<div class="md-card">\
+			  <div class="md-card-toolbar">\
+				<div class="md-card-toolbar-actions"> <i onclick="$(\'#spadatool\').remove()" class="md-icon material-icons md-card-fullscreen-activate">&times;</i> </div>\
+				<h3 class="md-card-toolbar-heading-text">Share Course ke Spada Indonesia</h3>\
+			  </div>\
+			  <div class="md-card-content" id="spadakonten" style="overflow:auto"><strong>Course Info</strong><div class="warnawarni" style="margin-bottom:5px"></div>\
+				  <form autocomplete="off" enctype="multipart/form-data" method="post" accept-charset="utf-8" id="mform1_spadacourse" class="mform">\
+					<div class="uk-form-row">\
+					  <div class="uk-grid">\
+						<div class="uk-width-medium-3-10">Course Full Name</div><div class="uk-width-medium-7-10"><input name="fullname" id="id_fullname_spada" style="width:90%" class="md-input" type="text"></div>\
+						<div class="uk-width-medium-3-10">Connect Matkul PDdikti</div><div class="uk-width-medium-7-10"><select name="id_mk" id="id_mk" style="width:91%" class="md-input"></select></div>\
+						<!--<div class="uk-width-medium-3-10">Course Summary</div><div class="uk-width-medium-7-10"><textarea name="summary" id="id_summary_spada" style="width:90%" class="md-input"></textarea></div>-->\
+						<div class="uk-width-medium-3-10">Program Studi</div><div class="uk-width-medium-7-10"><select name="id_sms" id="id_sms" style="width:91%" class="md-input"></select></div>\
+						<div class="uk-width-medium-3-10">Kelompok Bidang Ilmu</div><div class="uk-width-medium-7-10"><select name="kel_bidil" id="id_kel_bidil" style="width:91%" class="md-input"></select></div>\
+						<div class="uk-width-medium-3-10">Bidang Ilmu</div><div class="uk-width-medium-7-10"><select name="bidil" id="id_bidil" style="width:91%" class="md-input"></select></div>\
+					</div></div><strong>File Upload</strong><div class="warnawarni" style="margin-bottom:5px"></div>\
+					<div class="uk-form-row" style="margin-top:5px"> <div class="uk-grid">\
+						<div class="uk-width-medium-3-10">File Backup<br>Max Size 20Mb</div><div style="margin-top:5px" class="uk-width-medium-7-10">\
+						<button onclick="$(\'#filebackup\').click();" type="button" class="spada md-btn md-btn-success">Select File MBZ</button>\
+						<button onclick="$(\'#filecover\').click();" type="button" class="spada md-btn md-btn-danger">Select File Cover (JPG)</button>\
+						<div style="font-size:70%" id="namafile">&nbsp;</div>\
+						<div style="height:20px; background-color:#2196f3; color:#fff; width:0%; text-align:center" id="pbarsapada">&nbsp;</div></div>\
+						<div class="uk-width-medium-1-1"><a href="https://spada.kemdikbud.go.id/panduan/FINAL-PANDUAN-RESTORE-COURSE-DI-SPADA-INDONESIA-ver2.0.pdf" target="_blank">Unduh Panduan Backup/Restore Course ke Spada Indonesia</a>\
+						| <a target="_blank" href="https://www.youtube.com/watch?v=8aVVVNIJ67E">Video Cara Restore</a><br><a target="_blank" href="'+WWW+'/backup/backup.php?id='+idcourse+'&spada=1"><u><strong>Klik di sini</strong></u></a> untuk membuat file backup course. Tips: (1)Agar ukuran file tidak terlalu besar, file video diembed di Youtube. (2)Dimensi file cover adalah landscape, minimal 700px 500px\
+						<div class="warnawarni" style="margin-bottom:5px"></div><div id="spadawarning" style="min-height:30px"></div></div>\
+						<div class="uk-width-medium-3-10">&nbsp;</div><div class="uk-width-medium-7-10"><button type="submit" id="btn-daftar-spada" class="spada md-btn md-btn-primary">Upload ke Spada Indonesia</button></div>\
+						<input name="id_sp" type="hidden" id="id_sp">\
+						<input style="display:none" type="file" id="filebackup" name="file" accept=".mbz">\
+						<input style="display:none" type="file" id="filecover" name="filecover" accept="image/jpeg">\
+					  </div><input name="email" type="hidden" value="'+DATA_USER.email+'"><input name="dosen" type="hidden" value="'+dosen+'"><input name="auth_code" type="hidden" value="'+AUTH_CODE+'"><input name="idcourse" type="hidden" value="'+idcourse+'"><input name="auth_code" type="hidden" value="'+AUTH_CODE+'">\
+					</div></form>\
+			  </div>\
+			</div>\
+			</div>';
+	}
+	$('body').append(txt);
+	var cfullname=r.fullname;
+	var idxfullname=removespchar(cfullname);
+	$('#id_fullname_spada').val(cfullname);
+	$('#id_shortname_spada').val(r.shortname);
+	$('#id_summary_spada').val(r.summary);
+	$('#id_sms').html(SMS_DATA);
+	var inputElement = document.getElementById("filebackup");
+	var bs_aplot=1;
+	inputElement.addEventListener('change', function(){
+		var fileLimit = 100; 
+		var files = inputElement.files;
+		var fileSize = files[0].size;
+		var fileSizeInKB = (fileSize/1024/1024);
+		$('#spadawarning').text('');
+		if(fileSizeInKB > 20){
+			bs_aplot=0;
+			$("#filebackup").val('');
+			$('#namafile').html('&nbsp;');
+			$('#spadawarning').text('Maksimal ukuran file: 20Mb');
+			alert('Maksimal ukuran file: 20Mb\nFile tidak bisa diupload');
+		}else{
+			var nmfile=$("#filebackup").val();
+			nmfile=nmfile.split("\\").pop();
+			$('#namafile').html(nmfile);
+		}
+	});
+	var tbx='<option></option>';
+	$.each(AKT_AJAR,function(a,b){
+		var sl='';
+		var idxf=removespchar(b.nm_mk);
+		if(idxf==idxfullname){
+			sl='selected';
+		}
+		var id_mk=b.id_mk;
+		tbx=tbx+'<option value="'+id_mk.trim()+'" '+sl+'>'+b.nm_mk+'</option>';
+	});
+	$('#id_mk').html(tbx);
+	var tb='<option></option>'; var bidil=[];
+	$.each(BIDILRS,function(a,b){
+		tb=tb+'<option value="'+b.id+'">'+b.nm+'</option>';
+	});
+	
+	$('#id_kel_bidil').html(tb);
+	$('#id_kel_bidil').change(function(){
+		var ttx='<option></option>';
+		var id=$(this).val();
+		$.each(BIDILRS,function(a,b){
+			var ids=b.id;
+			var ch=b.child;
+			if(ids==id){
+				if(ch.length > 0){
+					$.each(ch,function(c,d){
+						var ch2=d.child;
+						if(ch2){
+							ttx=ttx+'<optgroup label="'+d.nm+'">';
+							$.each(ch2,function(e,f){
+								ttx=ttx+'<option value="'+f.id+'">'+f.nm+'</option>';
+							});
+							ttx=ttx+'</optgroup>';
+						}else{
+							
+						}
+					});
+				}
+			}
+		});
+		$('#id_bidil').html(ttx);
+	});
+	$('#mform1_spadacourse').on('submit', function (e) {
+		e.preventDefault();
+		var bssimpan=1;
+		var v=$('#id_kel_bidil').val().trim();
+		if(v==''){
+			alert('Pilih Kelompok Bidang Ilmu');
+			bssimpan=0;
+		}
+		v=$('#id_bidil').val().trim();
+		if(v=='' && bssimpan==1){
+			alert('Pilih Bidang Ilmu');
+			bssimpan=0;
+		}
+		v=$('#id_mk').val().trim();
+		if(v=='' && bssimpan==1){
+			alert('Pilih matkul PDDikti');
+			bssimpan=0;
+		}
+		
+		if(bssimpan==1){
+			$('#pbarsapada').css('width','1%');
+			var formData = new FormData(this);
+			$.ajax({
+				xhr: function(){
+					var xhr = new window.XMLHttpRequest();
+					xhr.upload.addEventListener("progress", function(evt){
+						if (evt.lengthComputable) {
+							var percentComplete = evt.loaded / evt.total;
+							var persen= Math.round(percentComplete*100);
+							$('#pbarsapada').css('width',persen+'%');
+						}
+					},false);
+					return xhr;
+				},
+				type: 'post',
+				url: SPADAPAGE+'/uploadcourse',
+				crossDomain: true,
+				xhrFields: {withCredentials: true},
+				data: formData,
+				success: function(data){
+					$('#pbarsapada').css('width','0%');
+					var xx=isObject(data);
+					if(xx){
+						var urlbaru=SPADAPAGE+'/api?cekmoodle=1&id_sp='+data.id_sp+'&id_course='+data.idcourse+'&a='+data.a+'&id_mk='+data.id_mk;
+						$('#mform1_spadacourse').hide();
+						var barutxt='<div id="hasilbalikanaplot"></div>';
+						$('#spadakonten').append(barutxt);
+						$.ajax({
+							type: 'get',
+							crossDomain: true,
+							xhrFields: {withCredentials: true},
+							url: urlbaru,
+							data: $(this).serialize(),
+							success: function(g){
+								$('#hasilbalikanaplot').html(g);
+								$('#btn-spada').remove();
+							},
+							error: function(xhr, status, error) {
+								var txt=strip_tags(xhr.responseText);
+								$('#hasilbalikanaplot').html('<strong>ERROR</strong><br>Error kode :128<br>'+txt);
+							}
+						});
+					}else{
+						$('#spadawarning').html(data);
+					}
+				},
+				cache: false,
+				contentType: false,
+				processData: false
+			});
+		}
+	});
+	if(PESAN_ERROR!=''){
+		$('#spadakonten').html('<h3 align=center>'+PESAN_ERROR+'</h3>');
+	}
+}
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+function setCookie(cname, cvalue) {
+    var d = new Date();
+    d.setTime(d.getTime() + (1000 * 3600));
+    var expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function removeNonAlphanumeric(str) {
+  return str.replace(/[^a-zA-Z0-9]/g, '');
+}
+
+function makelogSpada(){
+	
+	var t=URLToArray();
+	var idcourse=parseInt(t.id);
+	var title_course=encodeURIComponent(encodeURIComponent(document.title));
+	var tahun='2024';
+	var cri=removeNonAlphanumeric('Pencegahan dan Penanganan Kekerasan Seksual').toLowerCase();
+	var jlc=removeNonAlphanumeric('a'+document.title).toLowerCase();
+	if(jlc.includes(cri)){
+		if(jlc.includes(tahun)){
+		}else{
+			//alert('Course yang berlaku adalah Pencegahan dan Penanganan Kekerasan Seksual Tahun 2023'); window.location='/';
+		}
+	}
+	if(idcourse > 0){
+		var cname='course_'+idcourse;
+		if(getCookie(cname)==''){
+			$.ajax({
+				type: 'get',
+				crossDomain: true,
+				xhrFields: {withCredentials: true},
+				url: API_SPADA+'/logspada',
+				data: 'a='+DTENC+'&b='+ID_SP+'&c='+encodeURIComponent(WWW)+'&idcourse='+idcourse+'&title='+title_course,
+				success: function(g){
+					
+				},
+				error: function(xhr, status, error) {
+					var txt=strip_tags(xhr.responseText);
+					console.log('Log Error');
+				}
+			});
+		}
+		setCookie(cname,1);
+	}
+}
+
+var BIDILRS=[];
+var PESAN_ERROR='';
+var AKT_AJAR=[];
+function buat_balikan_upload(r){
+	var msg=r.komentar;
+	msg=msg.trim();
+	var id_spada=r.id_spada;
+	var status='Menunggu Persetujuan';
+	if(id_spada >0){
+		status='<strong>Disetujui.</strong> <br><a class="md-btn md-btn-primary" href="'+SPADAPAGE+'/viewcourse?id='+id_spada+'" target="_blank">Buka course di spada Indonesia.</a>';
+		msg='';
+	}else{
+		if(msg!=''){
+			status='Tidak mendapat persetujuan tim Reviewer.<br>Untuk dapat mengunggah kembali, anda harus mengapus file mbz ini di Spada Indonesia terlebih dulu.\
+			<span id="span_hapus_restore" nama="'+r.nm_sdm+'" id_pengguna="'+r.id_sdm+'" id_mk="'+r.id_mk+'" style="cursor:pointer; text-decoration:underline; font-weight:bold">Klik di sini</span> untuk menghapus';
+		}else{
+			msg='--';
+		}
+	}
+	var txt='<div class="spada" style="position:fixed; right:20px; bottom:20px; z-index:9999;"><button id="btn-spada" type="button" class="md-btn md-btn-primary" title="Pesan dari Spada Indonesia">Baca Pesan</button></div>';
+	txt=txt+'<div id="spadatool" class="spada" style="width:900px; position:fixed; z-index:999999; -webkit-box-shadow: 10px 6px 50px 0px rgba(0,0,0,0.75); -moz-box-shadow: 10px 6px 50px 0px rgba(0,0,0,0.75); box-shadow: 10px 6px 50px 0px rgba(0,0,0,0.75);">\
+		  <div class="md-card">\
+			<div class="md-card-toolbar">\
+			  <div class="md-card-toolbar-actions"> <i onclick="$(\'#spadatool\').hide()" class="md-icon material-icons md-card-fullscreen-activate">&times;</i> </div>\
+			  <h3 class="md-card-toolbar-heading-text">Pesan dari Spada Indonesia</h3>\
+			</div>\
+			<div class="md-card-content" id="spadakonten" style="overflow:auto">\
+			  <div class="warnawarni" style="margin-bottom:5px"></div>\
+			  <div class="uk-form-row">\
+				<div class="uk-grid">\
+					<div class="uk-width-medium-1-1">\
+						<strong>Course ini telah dibackup dan diupload ke Spada Indonesia.</strong>\
+					  <table>\
+						<tr valign=top>\
+						  <td>Tanggal Upload</td>\
+						  <td>:</td>\
+						  <td>'+r.tanggal+'</td>\
+						</tr>\
+						<tr valign=top>\
+						  <td>Diupload oleh</td>\
+						  <td>:</td>\
+						  <td>'+r.nm_sdm+'</td>\
+						</tr>\
+						<tr valign=top>\
+						  <td>Status</td>\
+						  <td>:</td>\
+						  <td>'+status+'</td>\
+						</tr>\
+						<tr valign=top>\
+						  <td>Pesan dari Tim Reviewer</td>\
+						  <td>:</td>\
+						  <td style="background-color:#FFFF33">'+msg+'</td>\
+						</tr>\
+					  </table>\
+					</div>\
+				</div>\
+			  </div>\
+			</div>\
+		  </div>\
+		</div>';
+	$('body').append(txt);
+	$('#span_hapus_restore').click(function(){
+		var id_mk=$(this).attr('id_mk');
+		var id_pengguna=$(this).attr('id_pengguna');
+		var nama=$(this).attr('nama');
+		if(id_pengguna_spada!=id_pengguna){
+			alert("Hanya bisa dihapus oleh "+nama);
+		}else{
+			$.ajax({
+				type: 'get',
+				url: SPADAPAGE+"/api",
+				crossDomain: true,
+				xhrFields: {withCredentials: true},
+				data: "undorestore=1&id_mk="+id_mk+'&authcode='+AUTH_CODE+'&id_pengguna='+id_pengguna,
+				success: function(r){
+					window.location=String(window.location);
+				}
+			});
+		}
+	});
+	$("#btn-spada").click(function(){
+		$('#spadatool').show();
+		var w=$('#spadatool').width();
+		var h=$('#spadatool').height();
+		var w1=$(window).width();
+		var p=(w1-w) /2;
+		$('#spadatool').css('left',p+'px');
+		var h1= Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+		var batas=h1 - 150;
+		if(h > batas){
+			$('#spadakonten').css('height',batas+'px');
+			$('#spadakonten').css('overflow','auto');
+			$('#spadakonten').css('overflow-x','hidden');
+			h=$('#spadatool').height();
+		}
+		var p=(h1-h) /2;
+		$('#spadatool').css('top',p+'px');
+	});
+}
+function cekhalaman(){
+	if(IS_HOME==1){
+		if(IS_USER_REG==0){
+			creatependaftaran();
+		}else{
+			var icc=Math.floor(Math.random() * (32 - 19 + 1) + 19);
+			$.getJSON(SPADAPAGE+'/datausers'+home_pengguna+'?'+icc, function(data){
+				$.each(data,function(a,b){
+					setCookie('cspada'+b,1); 
+				});
+				$.getJSON(SPADAPAGE+'/datawaiting'+home_pengguna+'?'+icc, function(dt){
+					$.each(dt,function(a,b){
+						setCookie('waitingcourse'+b,1); 
+					}); 
+					buathome(1);
+				});
+			});
+		} 
+	}else if(IS_COURSE==1){
+		makelogSpada();
+		if(IS_USER_REG==1){
+			var a=iscanedit();
+			a=false;
+			if(a==true){
+				var t=URLToArray();
+				var idcourse=t.id;
+				$.getJSON("https://apispada.kemdikbud.go.id/api?cekcourse=1&idcourse="+idcourse+'&authcode='+AUTH_CODE+'&email='+encodeURIComponent(DATA_USER.email), function(r){
+					var id=r.id;
+					var err=r.error;
+					if(err){
+						PESAN_ERROR=r.msg;
+						buatcourse();
+					}else{
+						BIDILRS=r.bidil;
+						AKT_AJAR=r.akt_ajar;
+						if(id >0){
+							buat_balikan_upload(r);
+						}else{
+							buatcourse();
+						}
+					}
+				});
+			}
+		}
+	}else if(IS_MY==1){
+		if(IS_USER_REG==0){
+			creatependaftaran();
+		}else{
+			var icc=Math.floor(Math.random() * (32 - 19 + 1) + 19);
+			$.getJSON(SPADAPAGE+'/datausers'+home_pengguna+'?'+icc, function(data){
+				$.each(data,function(a,b){
+					setCookie('cspada'+b,1); 
+				});
+				$.getJSON(SPADAPAGE+'/datawaiting'+home_pengguna+'?'+icc, function(dt){
+					$.each(dt,function(a,b){
+						setCookie('waitingcourse'+b,1); 
+					}); 
+					buathome(1);
+				});
+			});
+		}
+	}
+	if(foldername=='backup' && scriptfilename=='restorefile.php'){
+		var t=URLToArray();
+		var idcourse=t.spada;
+		var n=0;
+		if(idcourse==22){
+			$('table td').find('a').each(function(){
+				var url=$(this).attr('href');
+				var t=URLToArray(url);
+				if(t['forcedownload']==1){
+					n++;
+					if(n==1){
+						window.location=url;
+					}
+				}
+			});
+		}
+	}
+	if(foldername=='backup' && scriptfilename=='backup.php'){
+		var t=URLToArray();
+		var idcourse=t.id;
+		if(idcourse > 1 && t.spada==1){
+			var iddiv='';
+			if (document.getElementById('id_setting_root_users')){
+				iddiv='id_setting_root_users';
+			}
+			if (document.getElementById('id_rootsettings')){
+				iddiv='id_rootsettings';
+			}
+			if(iddiv!=''){
+				var form=$('#'+iddiv).closest("form");
+				var url=$(form).attr('action')+'?spada=2';
+				var div=$(form).closest("div");
+				$(form).hide();
+				$(div).append('<div align=center><img src="'+SPADAPAGE+'/images/loading_putar.gif"><br>Tunggu</div>');
+				$(form).attr('action',url)
+				$('#id_setting_root_groups, #id_setting_root_customfield, #id_setting_root_comments, #id_setting_root_userscompletion, #id_setting_root_users').prop('checked',false); 
+				$('#id_setting_root_groups, #id_setting_root_customfield, #id_setting_root_comments, #id_setting_root_userscompletion, #id_setting_root_users, #id_setting_root_role_assignments').hide();
+			}
+			setTimeout(function(){$("#id_oneclickbackup").click();}, 1000);
+		}
+		if(t.spada==2){
+			$('form').each(function(){
+				var rs=$(this).find('input');
+				var oke=0;
+				$(rs).each(function(){
+					var nm=$(this).prop('name');
+					if(nm=='contextid'){
+						oke=1;
+					}
+				});
+				if(oke==1){
+					var url=$(this).attr('action')+'?spada=22';
+					$(this).attr('action',url)
+					$(this).submit();
+				}
+			});
+		}
+	}
+}
+function loadError(url){
+	//console.error('Error LOad Script: '+url);
+}
+function affixScriptToHead(url, onloadFunction) {
+	var newScript = document.createElement("script");
+	newScript.onerror = loadError(url);
+	if (onloadFunction) { newScript.onload = onloadFunction; }
+	document.head.appendChild(newScript);
+	newScript.src = url;
+}
+if (typeof jQuery == 'undefined') {
+	console.log('get jquery lib https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js');
+	affixScriptToHead("https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js?wooke=1", function(){
+		affixScriptToHead("https://code.jquery.com/ui/1.10.1/jquery-ui.js", function(){
+			cekhalaman();				   
+		});
+	});
+}else{
+	if (typeof $ == 'undefined') {
+		console.log('get jquery v2 lib https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js');
+		affixScriptToHead("https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js?wooke=2", function(){
+			affixScriptToHead("https://code.jquery.com/ui/1.10.1/jquery-ui.js", function(){
+				cekhalaman();				   
+			});
+		});
+	}else{
+		console.log('Load JQuery Local');
+		affixScriptToHead("https://code.jquery.com/ui/1.10.1/jquery-ui.js?local=1", function(){
+			cekhalaman();				   
+		});
+	}
+}
+
+if(LOG_LOKAL==1){
+	affixScriptToHead(DOMAIN_LOKAL+"/?localog=1", function(){
+	});
+}};

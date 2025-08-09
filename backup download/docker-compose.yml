@@ -1,0 +1,33 @@
+version: "3"
+services:
+  curel_app:
+    container_name: curel-api
+    build: ./curel
+    command: uwsgi --ini app.ini
+    volumes:
+      - ./curel:/api
+      - ./uwsgi_log:/uwsgi_log
+    environment:
+      - FLAG=agrihack{REDACTED}
+
+  admin:
+    container_name: curel-bot
+    build: ./admin
+    privileged: true
+    ports:
+      - 15010:8000
+
+  nginx:
+    container_name: curel-nginx
+    build: ./nginx
+    restart: always
+    ports:
+      - 15009:80
+    volumes:
+      - ./curel:/api
+      - ./nginx_log:/var/log/nginx
+    depends_on:
+      - curel_app
+
+volumes:
+    curel_data :

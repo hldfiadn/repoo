@@ -1,0 +1,7 @@
+[autorun]
+label=HP Smart Install
+icon=SISetup.exe
+
+action=HP Smart Install
+open=SISetup.exe
+

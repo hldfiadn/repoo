@@ -1,0 +1,4114 @@
+[     UTC     ] Logs for ds-2-halida.streamlit.app/
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+[14:41:25] 🖥 Provisioning machine...
+
+[14:41:25] 🎛 Preparing system...
+
+[14:41:25] ⛓ Spinning up manager process...
+
+[14:37:42] 🚀 Starting up repository: 'repoo', branch: 'main', main module: 'app.py'
+
+[14:37:42] 🐙 Cloning repository...
+
+[14:37:46] 🐙 Cloning into '/mount/src/repoo'...
+
+[14:37:46] 🐙 Cloned repository!
+
+[14:37:46] 🐙 Pulling code changes from Github...
+
+[14:37:47] 📦 Processing dependencies...
+
+
+──────────────────────────────────────── uv ───────────────────────────────────────────
+
+
+Using uv pip install.
+
+Using Python 3.13.5 environment at /home/adminuser/venv
+
+Resolved 42 packages in 452ms
+
+Prepared 42 packages in 4.70s
+
+Installed 42 packages in 183ms
+
+ + altair==5.5.0
+
+ + attrs==25.3.0
+
+ + blinker==1.9.0
+
+ + cachetools==6.1.0
+
+ + certifi==2025.6.15
+
+ + charset-normalizer==3.4.2
+
+ + click==8.2.1
+
+ + cloudpickle==3.1.1
+
+ + gitdb==[2025-06-18 14:37:53.035353] 4.0.12
+
+ + gitpython==3.1.44
+
+ + idna==3.10
+
+ + jinja2==3.1.6
+
+ + joblib==1.5.1
+
+ [2025-06-18 14:37:53.035560] + jsonschema==4.24.0
+
+ + jsonschema-specifications==2025.4.1
+
+ + markupsafe==3.0.2
+
+ + narwhals==1.43.0
+
+ + numpy==2.3.0
+
+ + packaging==25.0[2025-06-18 14:37:53.035731] 
+
+ + pandas==2.3.0
+
+ + pillow==11.2.1
+
+ + protobuf==6.31.1
+
+ + pyarrow==20.0.0
+
+ + pydeck==0.9.1
+
+ + python-dateutil[2025-06-18 14:37:53.036016] ==2.9.0.post0
+
+ + pytz==2025.2
+
+ + referencing==0.36.2
+
+ + requests==2.32.4[2025-06-18 14:37:53.036231] 
+
+ + rpds-py==0.25.1
+
+ + scikit-learn==1.7.0
+
+ + scipy==1.15.3[2025-06-18 14:37:53.036420] 
+
+ + six==1.17.0
+
+ + smmap==5.0.2
+
+ + streamlit==1.46.0
+
+ [2025-06-18 14:37:53.036624] + tenacity==9.1.2
+
+ + threadpoolctl==3.6.0
+
+ + toml==0.10.2
+
+ + [2025-06-18 14:37:53.036771] tornado==6.5.1
+
+ + typing-extensions==4.14.0
+
+ + tzdata==2025.2
+
+ + urllib3==2.5.0
+
+ + watchdog==6.0.0
+
+Checking if Streamlit is installed
+
+Found Streamlit version 1.46.0 in the environment
+
+Installing rich for an improved exception logging
+
+Using uv pip install.
+
+Using Python 3.13.5 environment at /home/adminuser/venv
+
+Resolved 4 packages in 137ms
+
+Prepared 4 packages in 131ms
+
+Installed 4 packages in 15ms
+
+ + markdown-it-py==[2025-06-18 14:37:54.849150] 3.0.0
+
+ + mdurl==0.1.2
+
+ + pygments==2.19.1
+
+ + rich==14.0.0
+
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+
+[14:37:55] 🐍 Python dependencies were installed from /mount/src/repoo/requirements.txt using uv.
+
+Check if streamlit is installed
+
+Streamlit is already installed
+
+[14:37:57] 📦 Processed dependencies!
+
+
+
+
+/home/adminuser/venv/lib/python3.13/site-packages/sklearn/base.py:440: InconsistentVersionWarning: Trying to unpickle estimator SimpleImputer from version 1.6.1 when using version 1.7.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+  warnings.warn(
+
+/home/adminuser/venv/lib/python3.13/site-packages/sklearn/base.py:440: InconsistentVersionWarning: Trying to unpickle estimator MinMaxScaler from version 1.6.1 when using version 1.7.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+  warnings.warn(
+
+/home/adminuser/venv/lib/python3.13/site-packages/sklearn/base.py:440: InconsistentVersionWarning: Trying to unpickle estimator Pipeline from version 1.6.1 when using version 1.7.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+  warnings.warn(
+
+/home/adminuser/venv/lib/python3.13/site-packages/sklearn/base.py:440: InconsistentVersionWarning: Trying to unpickle estimator OrdinalEncoder from version 1.6.1 when using version 1.7.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+  warnings.warn(
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:8 in <module>                                         
+
+                                                                                
+
+      5 import cloudpickle                                                      
+
+      6                                                                         
+
+      7 with open("model.pkl", "rb") as f:                                      
+
+  ❱   8 │   model = cloudpickle.load(f)                                         
+
+      9                                                                         
+
+     10                                                                         
+
+     11 st.title("Student Dropout Prediction")                                  
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+[14:40:46] 🐙 Pulling code changes from Github...
+
+[14:40:46] 📦 Processing dependencies...
+
+
+──────────────────────────────────────── uv ───────────────────────────────────────────
+
+
+Using uv pip install.
+
+Using Python 3.13.5 environment at /home/adminuser/venv
+
+Resolved 42 packages in 144ms
+
+Audited 42 packages in 0.09ms
+
+Checking if Streamlit is installed
+
+Found Streamlit version 1.46.0 in the environment
+
+Installing rich for an improved exception logging
+
+Using uv pip install.
+
+Using Python 3.13.5 environment at /home/adminuser/venv
+
+Audited 1 package in 2ms
+
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+
+[14:40:48] 🐍 Python dependencies were installed from /mount/src/repoo/requirements.txt using uv.
+
+[14:40:48] 📦 Processed dependencies!
+
+  Stopping...
+
+
+
+
+[14:40:52] 🔄 Updated app!
+
+/home/adminuser/venv/lib/python3.13/site-packages/sklearn/base.py:440: InconsistentVersionWarning: Trying to unpickle estimator SimpleImputer from version 1.6.1 when using version 1.7.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+  warnings.warn(
+
+/home/adminuser/venv/lib/python3.13/site-packages/sklearn/base.py:440: InconsistentVersionWarning: Trying to unpickle estimator MinMaxScaler from version 1.6.1 when using version 1.7.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+  warnings.warn(
+
+/home/adminuser/venv/lib/python3.13/site-packages/sklearn/base.py:440: InconsistentVersionWarning: Trying to unpickle estimator Pipeline from version 1.6.1 when using version 1.7.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+  warnings.warn(
+
+/home/adminuser/venv/lib/python3.13/site-packages/sklearn/base.py:440: InconsistentVersionWarning: Trying to unpickle estimator OrdinalEncoder from version 1.6.1 when using version 1.7.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+  warnings.warn(
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:8 in <module>                                         
+
+                                                                                
+
+      5 import cloudpickle                                                      
+
+      6                                                                         
+
+      7 with open("model.pkl", "rb") as f:                                      
+
+  ❱   8 │   model = cloudpickle.load(f)                                         
+
+      9                                                                         
+
+     10                                                                         
+
+     11 st.title("Student Dropout Prediction")                                  
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:8 in <module>                                         
+
+                                                                                
+
+      5 import cloudpickle                                                      
+
+      6                                                                         
+
+      7 with open("model.pkl", "rb") as f:                                      
+
+  ❱   8 │   model = cloudpickle.load(f)                                         
+
+      9                                                                         
+
+     10                                                                         
+
+     11 st.title("Student Dropout Prediction")                                  
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+[14:42:27] 🐙 Pulling code changes from Github...
+
+2025-06-18 14:42:27.976 Received event for non-watched path: /mount/src/repoo/app.py
+
+[14:42:28] 📦 Processing dependencies...
+
+[14:42:28] 📦 Processed dependencies!
+
+[14:42:29] 🔄 Updated app!
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:8 in <module>                                         
+
+                                                                                
+
+      5 import cloudpickle                                                      
+
+      6                                                                         
+
+      7 with open("model.pkl", "rb") as f:                                      
+
+  ❱   8 │   model = cloudpickle.load(f)                                         
+
+      9                                                                         
+
+     10                                                                         
+
+     11 st.title("Student Dropout Prediction")                                  
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:8 in <module>                                         
+
+                                                                                
+
+      5                                                                         
+
+      6 # Load model                                                            
+
+      7 @st.cache_resource                                                      
+
+  ❱   8 def load_model():                                                       
+
+      9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+     11 model = load_model()                                                    
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+[14:42:47] ❗️ 
+
+2025-06-18 14:42:47.746 503 GET /script-health-check (127.0.0.1) 199.12ms
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:8 in <module>                                         
+
+                                                                                
+
+      5                                                                         
+
+      6 # Load model                                                            
+
+      7 @st.cache_resource                                                      
+
+  ❱   8 def load_model():                                                       
+
+      9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+     11 model = load_model()                                                    
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+2025-06-18 14:42:52.825 503 GET /script-health-check (127.0.0.1) 276.43ms
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:8 in <module>                                         
+
+                                                                                
+
+      5                                                                         
+
+      6 # Load model                                                            
+
+      7 @st.cache_resource                                                      
+
+  ❱   8 def load_model():                                                       
+
+      9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+     11 model = load_model()                                                    
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+2025-06-18 14:42:57.835 503 GET /script-health-check (127.0.0.1) 265.71ms
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:8 in <module>                                         
+
+                                                                                
+
+      5                                                                         
+
+      6 # Load model                                                            
+
+      7 @st.cache_resource                                                      
+
+  ❱   8 def load_model():                                                       
+
+      9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+     11 model = load_model()                                                    
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+2025-06-18 14:43:02.666 503 GET /script-health-check (127.0.0.1) 199.53ms
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:8 in <module>                                         
+
+                                                                                
+
+      5                                                                         
+
+      6 # Load model                                                            
+
+      7 @st.cache_resource                                                      
+
+  ❱   8 def load_model():                                                       
+
+      9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+     11 model = load_model()                                                    
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+2025-06-18 14:43:07.849 503 GET /script-health-check (127.0.0.1) 277.88ms
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:8 in <module>                                         
+
+                                                                                
+
+      5                                                                         
+
+      6 # Load model                                                            
+
+      7 @st.cache_resource                                                      
+
+  ❱   8 def load_model():                                                       
+
+      9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+     11 model = load_model()                                                    
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+2025-06-18 14:43:12.691 503 GET /script-health-check (127.0.0.1) 225.79ms
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:8 in <module>                                         
+
+                                                                                
+
+      5                                                                         
+
+      6 # Load model                                                            
+
+      7 @st.cache_resource                                                      
+
+  ❱   8 def load_model():                                                       
+
+      9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+     11 model = load_model()                                                    
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+2025-06-18 14:43:17.833 503 GET /script-health-check (127.0.0.1) 274.60ms
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:8 in <module>                                         
+
+                                                                                
+
+      5                                                                         
+
+      6 # Load model                                                            
+
+      7 @st.cache_resource                                                      
+
+  ❱   8 def load_model():                                                       
+
+      9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+     11 model = load_model()                                                    
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+2025-06-18 14:43:22.654 503 GET /script-health-check (127.0.0.1) 197.85ms
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:8 in <module>                                         
+
+                                                                                
+
+      5                                                                         
+
+      6 # Load model                                                            
+
+      7 @st.cache_resource                                                      
+
+  ❱   8 def load_model():                                                       
+
+      9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+     11 model = load_model()                                                    
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+2025-06-18 14:43:27.844 503 GET /script-health-check (127.0.0.1) 275.55ms
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:8 in <module>                                         
+
+                                                                                
+
+      5                                                                         
+
+      6 # Load model                                                            
+
+      7 @st.cache_resource                                                      
+
+  ❱   8 def load_model():                                                       
+
+      9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+     11 model = load_model()                                                    
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+2025-06-18 14:43:32.811 503 GET /script-health-check (127.0.0.1) 266.17ms
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:8 in <module>                                         
+
+                                                                                
+
+      5                                                                         
+
+      6 # Load model                                                            
+
+      7 @st.cache_resource                                                      
+
+  ❱   8 def load_model():                                                       
+
+      9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+     11 model = load_model()                                                    
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+2025-06-18 14:43:37.688 503 GET /script-health-check (127.0.0.1) 222.95ms
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:8 in <module>                                         
+
+                                                                                
+
+      5                                                                         
+
+      6 # Load model                                                            
+
+      7 @st.cache_resource                                                      
+
+  ❱   8 def load_model():                                                       
+
+      9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+     11 model = load_model()                                                    
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+[14:43:42] 🐙 Pulling code changes from Github...
+
+2025-06-18 14:43:42.658 503 GET /script-health-check (127.0.0.1) 213.11ms
+
+[14:43:43] 📦 Processing dependencies...
+
+
+──────────────────────────────────────── uv ───────────────────────────────────────────
+
+
+Using uv pip install.
+
+Using Python 3.13.5 environment at /home/adminuser/venv
+
+Resolved 41 packages in 141ms
+
+Audited 41 packages in 0.12ms
+
+Checking if Streamlit is installed
+
+Found Streamlit version 1.46.0 in the environment
+
+Installing rich for an improved exception logging
+
+Using uv pip install.
+
+Using Python 3.13.5 environment at /home/adminuser/venv
+
+Audited 1 package in 1ms
+
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+
+[14:43:44] 🐍 Python dependencies were installed from /mount/src/repoo/requirements.txt using uv.
+
+[14:43:44] 📦 Processed dependencies!
+
+  Stopping...
+
+
+
+
+[14:43:48] 🔄 Updated app!
+
+/home/adminuser/venv/lib/python3.13/site-packages/sklearn/base.py:440: InconsistentVersionWarning: Trying to unpickle estimator SimpleImputer from version 1.6.1 when using version 1.7.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+  warnings.warn(
+
+/home/adminuser/venv/lib/python3.13/site-packages/sklearn/base.py:440: InconsistentVersionWarning: Trying to unpickle estimator MinMaxScaler from version 1.6.1 when using version 1.7.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+  warnings.warn(
+
+/home/adminuser/venv/lib/python3.13/site-packages/sklearn/base.py:440: InconsistentVersionWarning: Trying to unpickle estimator Pipeline from version 1.6.1 when using version 1.7.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+  warnings.warn(
+
+/home/adminuser/venv/lib/python3.13/site-packages/sklearn/base.py:440: InconsistentVersionWarning: Trying to unpickle estimator OrdinalEncoder from version 1.6.1 when using version 1.7.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+  warnings.warn(
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:11 in <module>                                        
+
+                                                                                
+
+      8 def load_model():                                                       
+
+      9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+  ❱  11 model = load_model()                                                    
+
+     12                                                                         
+
+     13 st.title("Student Dropout Prediction")                                  
+
+     14                                                                         
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:219 in __call__                                                
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:261 in _get_or_create_cached_value                             
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:320 in _handle_cache_miss                                      
+
+                                                                                
+
+  /mount/src/repoo/app.py:9 in load_model                                       
+
+                                                                                
+
+      6 # Load model                                                            
+
+      7 @st.cache_resource                                                      
+
+      8 def load_model():                                                       
+
+  ❱   9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+     11 model = load_model()                                                    
+
+     12                                                                         
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/joblib/numpy_pickle.py:749  
+
+  in load                                                                       
+
+                                                                                
+
+    746 │   │   │   │   # A memory-mapped array has to be mapped with the endi  
+
+    747 │   │   │   │   # it has been written with. Other arrays are coerced t  
+
+    748 │   │   │   │   # native endianness of the host system.                 
+
+  ❱ 749 │   │   │   │   obj = _unpickle(                                        
+
+    750 │   │   │   │   │   fobj,                                               
+
+    751 │   │   │   │   │   ensure_native_byte_order=ensure_native_byte_order,  
+
+    752 │   │   │   │   │   filename=filename,                                  
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/joblib/numpy_pickle.py:626  
+
+  in _unpickle                                                                  
+
+                                                                                
+
+    623 │   )                                                                   
+
+    624 │   obj = None                                                          
+
+    625 │   try:                                                                
+
+  ❱ 626 │   │   obj = unpickler.load()                                          
+
+    627 │   │   if unpickler.compat_mode:                                       
+
+    628 │   │   │   warnings.warn(                                              
+
+    629 │   │   │   │   "The file '%s' has been generated with a "              
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1256 in load                              
+
+                                                                                
+
+    1253 │   │   │   │   if not key:                                            
+
+    1254 │   │   │   │   │   raise EOFError                                     
+
+    1255 │   │   │   │   assert isinstance(key, bytes_types)                    
+
+  ❱ 1256 │   │   │   │   dispatch[key[0]](self)                                 
+
+    1257 │   │   except _Stop as stopinst:                                      
+
+    1258 │   │   │   return stopinst.value                                      
+
+    1259                                                                        
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1581 in load_stack_global                 
+
+                                                                                
+
+    1578 │   │   module = self.stack.pop()                                      
+
+    1579 │   │   if type(name) is not str or type(module) is not str:           
+
+    1580 │   │   │   raise UnpicklingError("STACK_GLOBAL requires str")         
+
+  ❱ 1581 │   │   self.append(self.find_class(module, name))                     
+
+    1582 │   dispatch[STACK_GLOBAL[0]] = load_stack_global                      
+
+    1583 │                                                                      
+
+    1584 │   def load_ext1(self):                                               
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1624 in find_class                        
+
+                                                                                
+
+    1621 │   │   │   │   module = _compat_pickle.IMPORT_MAPPING[module]         
+
+    1622 │   │   __import__(module, level=0)                                    
+
+    1623 │   │   if self.proto >= 4:                                            
+
+  ❱ 1624 │   │   │   return _getattribute(sys.modules[module], name)[0]         
+
+    1625 │   │   else:                                                          
+
+    1626 │   │   │   return getattr(sys.modules[module], name)                  
+
+    1627                                                                        
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:326 in _getattribute                      
+
+                                                                                
+
+     323 │   │   │   parent = obj                                               
+
+     324 │   │   │   obj = getattr(obj, subpath)                                
+
+     325 │   │   except AttributeError:                                         
+
+  ❱  326 │   │   │   raise AttributeError("Can't get attribute {!r} on {!r}"    
+
+     327 │   │   │   │   │   │   │   │    .format(name, top)) from None         
+
+     328 │   return obj, parent                                                 
+
+     329                                                                        
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+[14:43:54] ❗️ 
+
+2025-06-18 14:43:54.717 503 GET /script-health-check (127.0.0.1) 5931.22ms
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:11 in <module>                                        
+
+                                                                                
+
+      8 def load_model():                                                       
+
+      9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+  ❱  11 model = load_model()                                                    
+
+     12                                                                         
+
+     13 st.title("Student Dropout Prediction")                                  
+
+     14                                                                         
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:219 in __call__                                                
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:261 in _get_or_create_cached_value                             
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:320 in _handle_cache_miss                                      
+
+                                                                                
+
+  /mount/src/repoo/app.py:9 in load_model                                       
+
+                                                                                
+
+      6 # Load model                                                            
+
+      7 @st.cache_resource                                                      
+
+      8 def load_model():                                                       
+
+  ❱   9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+     11 model = load_model()                                                    
+
+     12                                                                         
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/joblib/numpy_pickle.py:749  
+
+  in load                                                                       
+
+                                                                                
+
+    746 │   │   │   │   # A memory-mapped array has to be mapped with the endi  
+
+    747 │   │   │   │   # it has been written with. Other arrays are coerced t  
+
+    748 │   │   │   │   # native endianness of the host system.                 
+
+  ❱ 749 │   │   │   │   obj = _unpickle(                                        
+
+    750 │   │   │   │   │   fobj,                                               
+
+    751 │   │   │   │   │   ensure_native_byte_order=ensure_native_byte_order,  
+
+    752 │   │   │   │   │   filename=filename,                                  
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/joblib/numpy_pickle.py:626  
+
+  in _unpickle                                                                  
+
+                                                                                
+
+    623 │   )                                                                   
+
+    624 │   obj = None                                                          
+
+    625 │   try:                                                                
+
+  ❱ 626 │   │   obj = unpickler.load()                                          
+
+    627 │   │   if unpickler.compat_mode:                                       
+
+    628 │   │   │   warnings.warn(                                              
+
+    629 │   │   │   │   "The file '%s' has been generated with a "              
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1256 in load                              
+
+                                                                                
+
+    1253 │   │   │   │   if not key:                                            
+
+    1254 │   │   │   │   │   raise EOFError                                     
+
+    1255 │   │   │   │   assert isinstance(key, bytes_types)                    
+
+  ❱ 1256 │   │   │   │   dispatch[key[0]](self)                                 
+
+    1257 │   │   except _Stop as stopinst:                                      
+
+    1258 │   │   │   return stopinst.value                                      
+
+    1259                                                                        
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1581 in load_stack_global                 
+
+                                                                                
+
+    1578 │   │   module = self.stack.pop()                                      
+
+    1579 │   │   if type(name) is not str or type(module) is not str:           
+
+    1580 │   │   │   raise UnpicklingError("STACK_GLOBAL requires str")         
+
+  ❱ 1581 │   │   self.append(self.find_class(module, name))                     
+
+    1582 │   dispatch[STACK_GLOBAL[0]] = load_stack_global                      
+
+    1583 │                                                                      
+
+    1584 │   def load_ext1(self):                                               
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1624 in find_class                        
+
+                                                                                
+
+    1621 │   │   │   │   module = _compat_pickle.IMPORT_MAPPING[module]         
+
+    1622 │   │   __import__(module, level=0)                                    
+
+    1623 │   │   if self.proto >= 4:                                            
+
+  ❱ 1624 │   │   │   return _getattribute(sys.modules[module], name)[0]         
+
+    1625 │   │   else:                                                          
+
+    1626 │   │   │   return getattr(sys.modules[module], name)                  
+
+    1627                                                                        
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:326 in _getattribute                      
+
+                                                                                
+
+     323 │   │   │   parent = obj                                               
+
+     324 │   │   │   obj = getattr(obj, subpath)                                
+
+     325 │   │   except AttributeError:                                         
+
+  ❱  326 │   │   │   raise AttributeError("Can't get attribute {!r} on {!r}"    
+
+     327 │   │   │   │   │   │   │   │    .format(name, top)) from None         
+
+     328 │   return obj, parent                                                 
+
+     329                                                                        
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+2025-06-18 14:43:55.604 503 GET /script-health-check (127.0.0.1) 591.00ms
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:11 in <module>                                        
+
+                                                                                
+
+      8 def load_model():                                                       
+
+      9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+  ❱  11 model = load_model()                                                    
+
+     12                                                                         
+
+     13 st.title("Student Dropout Prediction")                                  
+
+     14                                                                         
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:219 in __call__                                                
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:261 in _get_or_create_cached_value                             
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:320 in _handle_cache_miss                                      
+
+                                                                                
+
+  /mount/src/repoo/app.py:9 in load_model                                       
+
+                                                                                
+
+      6 # Load model                                                            
+
+      7 @st.cache_resource                                                      
+
+      8 def load_model():                                                       
+
+  ❱   9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+     11 model = load_model()                                                    
+
+     12                                                                         
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/joblib/numpy_pickle.py:749  
+
+  in load                                                                       
+
+                                                                                
+
+    746 │   │   │   │   # A memory-mapped array has to be mapped with the endi  
+
+    747 │   │   │   │   # it has been written with. Other arrays are coerced t  
+
+    748 │   │   │   │   # native endianness of the host system.                 
+
+  ❱ 749 │   │   │   │   obj = _unpickle(                                        
+
+    750 │   │   │   │   │   fobj,                                               
+
+    751 │   │   │   │   │   ensure_native_byte_order=ensure_native_byte_order,  
+
+    752 │   │   │   │   │   filename=filename,                                  
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/joblib/numpy_pickle.py:626  
+
+  in _unpickle                                                                  
+
+                                                                                
+
+    623 │   )                                                                   
+
+    624 │   obj = None                                                          
+
+    625 │   try:                                                                
+
+  ❱ 626 │   │   obj = unpickler.load()                                          
+
+    627 │   │   if unpickler.compat_mode:                                       
+
+    628 │   │   │   warnings.warn(                                              
+
+    629 │   │   │   │   "The file '%s' has been generated with a "              
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1256 in load                              
+
+                                                                                
+
+    1253 │   │   │   │   if not key:                                            
+
+    1254 │   │   │   │   │   raise EOFError                                     
+
+    1255 │   │   │   │   assert isinstance(key, bytes_types)                    
+
+  ❱ 1256 │   │   │   │   dispatch[key[0]](self)                                 
+
+    1257 │   │   except _Stop as stopinst:                                      
+
+    1258 │   │   │   return stopinst.value                                      
+
+    1259                                                                        
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1581 in load_stack_global                 
+
+                                                                                
+
+    1578 │   │   module = self.stack.pop()                                      
+
+    1579 │   │   if type(name) is not str or type(module) is not str:           
+
+    1580 │   │   │   raise UnpicklingError("STACK_GLOBAL requires str")         
+
+  ❱ 1581 │   │   self.append(self.find_class(module, name))                     
+
+    1582 │   dispatch[STACK_GLOBAL[0]] = load_stack_global                      
+
+    1583 │                                                                      
+
+    1584 │   def load_ext1(self):                                               
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1624 in find_class                        
+
+                                                                                
+
+    1621 │   │   │   │   module = _compat_pickle.IMPORT_MAPPING[module]         
+
+    1622 │   │   __import__(module, level=0)                                    
+
+    1623 │   │   if self.proto >= 4:                                            
+
+  ❱ 1624 │   │   │   return _getattribute(sys.modules[module], name)[0]         
+
+    1625 │   │   else:                                                          
+
+    1626 │   │   │   return getattr(sys.modules[module], name)                  
+
+    1627                                                                        
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:326 in _getattribute                      
+
+                                                                                
+
+     323 │   │   │   parent = obj                                               
+
+     324 │   │   │   obj = getattr(obj, subpath)                                
+
+     325 │   │   except AttributeError:                                         
+
+  ❱  326 │   │   │   raise AttributeError("Can't get attribute {!r} on {!r}"    
+
+     327 │   │   │   │   │   │   │   │    .format(name, top)) from None         
+
+     328 │   return obj, parent                                                 
+
+     329                                                                        
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:11 in <module>                                        
+
+                                                                                
+
+      8 def load_model():                                                       
+
+      9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+  ❱  11 model = load_model()                                                    
+
+     12                                                                         
+
+     13 st.title("Student Dropout Prediction")                                  
+
+     14                                                                         
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:219 in __call__                                                
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:261 in _get_or_create_cached_value                             
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:320 in _handle_cache_miss                                      
+
+                                                                                
+
+  /mount/src/repoo/app.py:9 in load_model                                       
+
+                                                                                
+
+      6 # Load model                                                            
+
+      7 @st.cache_resource                                                      
+
+      8 def load_model():                                                       
+
+  ❱   9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+     11 model = load_model()                                                    
+
+     12                                                                         
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/joblib/numpy_pickle.py:749  
+
+  in load                                                                       
+
+                                                                                
+
+    746 │   │   │   │   # A memory-mapped array has to be mapped with the endi  
+
+    747 │   │   │   │   # it has been written with. Other arrays are coerced t  
+
+    748 │   │   │   │   # native endianness of the host system.                 
+
+  ❱ 749 │   │   │   │   obj = _unpickle(                                        
+
+    750 │   │   │   │   │   fobj,                                               
+
+    751 │   │   │   │   │   ensure_native_byte_order=ensure_native_byte_order,  
+
+    752 │   │   │   │   │   filename=filename,                                  
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/joblib/numpy_pickle.py:626  
+
+  in _unpickle                                                                  
+
+                                                                                
+
+    623 │   )                                                                   
+
+    624 │   obj = None                                                          
+
+    625 │   try:                                                                
+
+  ❱ 626 │   │   obj = unpickler.load()                                          
+
+    627 │   │   if unpickler.compat_mode:                                       
+
+    628 │   │   │   warnings.warn(                                              
+
+    629 │   │   │   │   "The file '%s' has been generated with a "              
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1256 in load                              
+
+                                                                                
+
+    1253 │   │   │   │   if not key:                                            
+
+    1254 │   │   │   │   │   raise EOFError                                     
+
+    1255 │   │   │   │   assert isinstance(key, bytes_types)                    
+
+  ❱ 1256 │   │   │   │   dispatch[key[0]](self)                                 
+
+    1257 │   │   except _Stop as stopinst:                                      
+
+    1258 │   │   │   return stopinst.value                                      
+
+    1259                                                                        
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1581 in load_stack_global                 
+
+                                                                                
+
+    1578 │   │   module = self.stack.pop()                                      
+
+    1579 │   │   if type(name) is not str or type(module) is not str:           
+
+    1580 │   │   │   raise UnpicklingError("STACK_GLOBAL requires str")         
+
+  ❱ 1581 │   │   self.append(self.find_class(module, name))                     
+
+    1582 │   dispatch[STACK_GLOBAL[0]] = load_stack_global                      
+
+    1583 │                                                                      
+
+    1584 │   def load_ext1(self):                                               
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1624 in find_class                        
+
+                                                                                
+
+    1621 │   │   │   │   module = _compat_pickle.IMPORT_MAPPING[module]         
+
+    1622 │   │   __import__(module, level=0)                                    
+
+    1623 │   │   if self.proto >= 4:                                            
+
+  ❱ 1624 │   │   │   return _getattribute(sys.modules[module], name)[0]         
+
+    1625 │   │   else:                                                          
+
+    1626 │   │   │   return getattr(sys.modules[module], name)                  
+
+    1627                                                                        
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:326 in _getattribute                      
+
+                                                                                
+
+     323 │   │   │   parent = obj                                               
+
+     324 │   │   │   obj = getattr(obj, subpath)                                
+
+     325 │   │   except AttributeError:                                         
+
+  ❱  326 │   │   │   raise AttributeError("Can't get attribute {!r} on {!r}"    
+
+     327 │   │   │   │   │   │   │   │    .format(name, top)) from None         
+
+     328 │   return obj, parent                                                 
+
+     329                                                                        
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+2025-06-18 14:43:59.915 503 GET /script-health-check (127.0.0.1) 963.06ms
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:11 in <module>                                        
+
+                                                                                
+
+      8 def load_model():                                                       
+
+      9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+  ❱  11 model = load_model()                                                    
+
+     12                                                                         
+
+     13 st.title("Student Dropout Prediction")                                  
+
+     14                                                                         
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:219 in __call__                                                
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:261 in _get_or_create_cached_value                             
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:320 in _handle_cache_miss                                      
+
+                                                                                
+
+  /mount/src/repoo/app.py:9 in load_model                                       
+
+                                                                                
+
+      6 # Load model                                                            
+
+      7 @st.cache_resource                                                      
+
+      8 def load_model():                                                       
+
+  ❱   9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+     11 model = load_model()                                                    
+
+     12                                                                         
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/joblib/numpy_pickle.py:749  
+
+  in load                                                                       
+
+                                                                                
+
+    746 │   │   │   │   # A memory-mapped array has to be mapped with the endi  
+
+    747 │   │   │   │   # it has been written with. Other arrays are coerced t  
+
+    748 │   │   │   │   # native endianness of the host system.                 
+
+  ❱ 749 │   │   │   │   obj = _unpickle(                                        
+
+    750 │   │   │   │   │   fobj,                                               
+
+    751 │   │   │   │   │   ensure_native_byte_order=ensure_native_byte_order,  
+
+    752 │   │   │   │   │   filename=filename,                                  
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/joblib/numpy_pickle.py:626  
+
+  in _unpickle                                                                  
+
+                                                                                
+
+    623 │   )                                                                   
+
+    624 │   obj = None                                                          
+
+    625 │   try:                                                                
+
+  ❱ 626 │   │   obj = unpickler.load()                                          
+
+    627 │   │   if unpickler.compat_mode:                                       
+
+    628 │   │   │   warnings.warn(                                              
+
+    629 │   │   │   │   "The file '%s' has been generated with a "              
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1256 in load                              
+
+                                                                                
+
+    1253 │   │   │   │   if not key:                                            
+
+    1254 │   │   │   │   │   raise EOFError                                     
+
+    1255 │   │   │   │   assert isinstance(key, bytes_types)                    
+
+  ❱ 1256 │   │   │   │   dispatch[key[0]](self)                                 
+
+    1257 │   │   except _Stop as stopinst:                                      
+
+    1258 │   │   │   return stopinst.value                                      
+
+    1259                                                                        
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1581 in load_stack_global                 
+
+                                                                                
+
+    1578 │   │   module = self.stack.pop()                                      
+
+    1579 │   │   if type(name) is not str or type(module) is not str:           
+
+    1580 │   │   │   raise UnpicklingError("STACK_GLOBAL requires str")         
+
+  ❱ 1581 │   │   self.append(self.find_class(module, name))                     
+
+    1582 │   dispatch[STACK_GLOBAL[0]] = load_stack_global                      
+
+    1583 │                                                                      
+
+    1584 │   def load_ext1(self):                                               
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1624 in find_class                        
+
+                                                                                
+
+    1621 │   │   │   │   module = _compat_pickle.IMPORT_MAPPING[module]         
+
+    1622 │   │   __import__(module, level=0)                                    
+
+    1623 │   │   if self.proto >= 4:                                            
+
+  ❱ 1624 │   │   │   return _getattribute(sys.modules[module], name)[0]         
+
+    1625 │   │   else:                                                          
+
+    1626 │   │   │   return getattr(sys.modules[module], name)                  
+
+    1627                                                                        
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:326 in _getattribute                      
+
+                                                                                
+
+     323 │   │   │   parent = obj                                               
+
+     324 │   │   │   obj = getattr(obj, subpath)                                
+
+     325 │   │   except AttributeError:                                         
+
+  ❱  326 │   │   │   raise AttributeError("Can't get attribute {!r} on {!r}"    
+
+     327 │   │   │   │   │   │   │   │    .format(name, top)) from None         
+
+     328 │   return obj, parent                                                 
+
+     329                                                                        
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+2025-06-18 14:44:04.583 503 GET /script-health-check (127.0.0.1) 790.32ms
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:11 in <module>                                        
+
+                                                                                
+
+      8 def load_model():                                                       
+
+      9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+  ❱  11 model = load_model()                                                    
+
+     12                                                                         
+
+     13 st.title("Student Dropout Prediction")                                  
+
+     14                                                                         
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:219 in __call__                                                
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:261 in _get_or_create_cached_value                             
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:320 in _handle_cache_miss                                      
+
+                                                                                
+
+  /mount/src/repoo/app.py:9 in load_model                                       
+
+                                                                                
+
+      6 # Load model                                                            
+
+      7 @st.cache_resource                                                      
+
+      8 def load_model():                                                       
+
+  ❱   9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+     11 model = load_model()                                                    
+
+     12                                                                         
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/joblib/numpy_pickle.py:749  
+
+  in load                                                                       
+
+                                                                                
+
+    746 │   │   │   │   # A memory-mapped array has to be mapped with the endi  
+
+    747 │   │   │   │   # it has been written with. Other arrays are coerced t  
+
+    748 │   │   │   │   # native endianness of the host system.                 
+
+  ❱ 749 │   │   │   │   obj = _unpickle(                                        
+
+    750 │   │   │   │   │   fobj,                                               
+
+    751 │   │   │   │   │   ensure_native_byte_order=ensure_native_byte_order,  
+
+    752 │   │   │   │   │   filename=filename,                                  
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/joblib/numpy_pickle.py:626  
+
+  in _unpickle                                                                  
+
+                                                                                
+
+    623 │   )                                                                   
+
+    624 │   obj = None                                                          
+
+    625 │   try:                                                                
+
+  ❱ 626 │   │   obj = unpickler.load()                                          
+
+    627 │   │   if unpickler.compat_mode:                                       
+
+    628 │   │   │   warnings.warn(                                              
+
+    629 │   │   │   │   "The file '%s' has been generated with a "              
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1256 in load                              
+
+                                                                                
+
+    1253 │   │   │   │   if not key:                                            
+
+    1254 │   │   │   │   │   raise EOFError                                     
+
+    1255 │   │   │   │   assert isinstance(key, bytes_types)                    
+
+  ❱ 1256 │   │   │   │   dispatch[key[0]](self)                                 
+
+    1257 │   │   except _Stop as stopinst:                                      
+
+    1258 │   │   │   return stopinst.value                                      
+
+    1259                                                                        
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1581 in load_stack_global                 
+
+                                                                                
+
+    1578 │   │   module = self.stack.pop()                                      
+
+    1579 │   │   if type(name) is not str or type(module) is not str:           
+
+    1580 │   │   │   raise UnpicklingError("STACK_GLOBAL requires str")         
+
+  ❱ 1581 │   │   self.append(self.find_class(module, name))                     
+
+    1582 │   dispatch[STACK_GLOBAL[0]] = load_stack_global                      
+
+    1583 │                                                                      
+
+    1584 │   def load_ext1(self):                                               
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1624 in find_class                        
+
+                                                                                
+
+    1621 │   │   │   │   module = _compat_pickle.IMPORT_MAPPING[module]         
+
+    1622 │   │   __import__(module, level=0)                                    
+
+    1623 │   │   if self.proto >= 4:                                            
+
+  ❱ 1624 │   │   │   return _getattribute(sys.modules[module], name)[0]         
+
+    1625 │   │   else:                                                          
+
+    1626 │   │   │   return getattr(sys.modules[module], name)                  
+
+    1627                                                                        
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:326 in _getattribute                      
+
+                                                                                
+
+     323 │   │   │   parent = obj                                               
+
+     324 │   │   │   obj = getattr(obj, subpath)                                
+
+     325 │   │   except AttributeError:                                         
+
+  ❱  326 │   │   │   raise AttributeError("Can't get attribute {!r} on {!r}"    
+
+     327 │   │   │   │   │   │   │   │    .format(name, top)) from None         
+
+     328 │   return obj, parent                                                 
+
+     329                                                                        
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+2025-06-18 14:44:09.516 503 GET /script-health-check (127.0.0.1) 701.94ms
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:11 in <module>                                        
+
+                                                                                
+
+      8 def load_model():                                                       
+
+      9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+  ❱  11 model = load_model()                                                    
+
+     12                                                                         
+
+     13 st.title("Student Dropout Prediction")                                  
+
+     14                                                                         
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:219 in __call__                                                
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:261 in _get_or_create_cached_value                             
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:320 in _handle_cache_miss                                      
+
+                                                                                
+
+  /mount/src/repoo/app.py:9 in load_model                                       
+
+                                                                                
+
+      6 # Load model                                                            
+
+      7 @st.cache_resource                                                      
+
+      8 def load_model():                                                       
+
+  ❱   9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+     11 model = load_model()                                                    
+
+     12                                                                         
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/joblib/numpy_pickle.py:749  
+
+  in load                                                                       
+
+                                                                                
+
+    746 │   │   │   │   # A memory-mapped array has to be mapped with the endi  
+
+    747 │   │   │   │   # it has been written with. Other arrays are coerced t  
+
+    748 │   │   │   │   # native endianness of the host system.                 
+
+  ❱ 749 │   │   │   │   obj = _unpickle(                                        
+
+    750 │   │   │   │   │   fobj,                                               
+
+    751 │   │   │   │   │   ensure_native_byte_order=ensure_native_byte_order,  
+
+    752 │   │   │   │   │   filename=filename,                                  
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/joblib/numpy_pickle.py:626  
+
+  in _unpickle                                                                  
+
+                                                                                
+
+    623 │   )                                                                   
+
+    624 │   obj = None                                                          
+
+    625 │   try:                                                                
+
+  ❱ 626 │   │   obj = unpickler.load()                                          
+
+    627 │   │   if unpickler.compat_mode:                                       
+
+    628 │   │   │   warnings.warn(                                              
+
+    629 │   │   │   │   "The file '%s' has been generated with a "              
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1256 in load                              
+
+                                                                                
+
+    1253 │   │   │   │   if not key:                                            
+
+    1254 │   │   │   │   │   raise EOFError                                     
+
+    1255 │   │   │   │   assert isinstance(key, bytes_types)                    
+
+  ❱ 1256 │   │   │   │   dispatch[key[0]](self)                                 
+
+    1257 │   │   except _Stop as stopinst:                                      
+
+    1258 │   │   │   return stopinst.value                                      
+
+    1259                                                                        
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1581 in load_stack_global                 
+
+                                                                                
+
+    1578 │   │   module = self.stack.pop()                                      
+
+    1579 │   │   if type(name) is not str or type(module) is not str:           
+
+    1580 │   │   │   raise UnpicklingError("STACK_GLOBAL requires str")         
+
+  ❱ 1581 │   │   self.append(self.find_class(module, name))                     
+
+    1582 │   dispatch[STACK_GLOBAL[0]] = load_stack_global                      
+
+    1583 │                                                                      
+
+    1584 │   def load_ext1(self):                                               
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1624 in find_class                        
+
+                                                                                
+
+    1621 │   │   │   │   module = _compat_pickle.IMPORT_MAPPING[module]         
+
+    1622 │   │   __import__(module, level=0)                                    
+
+    1623 │   │   if self.proto >= 4:                                            
+
+  ❱ 1624 │   │   │   return _getattribute(sys.modules[module], name)[0]         
+
+    1625 │   │   else:                                                          
+
+    1626 │   │   │   return getattr(sys.modules[module], name)                  
+
+    1627                                                                        
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:326 in _getattribute                      
+
+                                                                                
+
+     323 │   │   │   parent = obj                                               
+
+     324 │   │   │   obj = getattr(obj, subpath)                                
+
+     325 │   │   except AttributeError:                                         
+
+  ❱  326 │   │   │   raise AttributeError("Can't get attribute {!r} on {!r}"    
+
+     327 │   │   │   │   │   │   │   │    .format(name, top)) from None         
+
+     328 │   return obj, parent                                                 
+
+     329                                                                        
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+2025-06-18 14:44:14.525 503 GET /script-health-check (127.0.0.1) 706.53ms
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:11 in <module>                                        
+
+                                                                                
+
+      8 def load_model():                                                       
+
+      9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+  ❱  11 model = load_model()                                                    
+
+     12                                                                         
+
+     13 st.title("Student Dropout Prediction")                                  
+
+     14                                                                         
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:219 in __call__                                                
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:261 in _get_or_create_cached_value                             
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:320 in _handle_cache_miss                                      
+
+                                                                                
+
+  /mount/src/repoo/app.py:9 in load_model                                       
+
+                                                                                
+
+      6 # Load model                                                            
+
+      7 @st.cache_resource                                                      
+
+      8 def load_model():                                                       
+
+  ❱   9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+     11 model = load_model()                                                    
+
+     12                                                                         
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/joblib/numpy_pickle.py:749  
+
+  in load                                                                       
+
+                                                                                
+
+    746 │   │   │   │   # A memory-mapped array has to be mapped with the endi  
+
+    747 │   │   │   │   # it has been written with. Other arrays are coerced t  
+
+    748 │   │   │   │   # native endianness of the host system.                 
+
+  ❱ 749 │   │   │   │   obj = _unpickle(                                        
+
+    750 │   │   │   │   │   fobj,                                               
+
+    751 │   │   │   │   │   ensure_native_byte_order=ensure_native_byte_order,  
+
+    752 │   │   │   │   │   filename=filename,                                  
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/joblib/numpy_pickle.py:626  
+
+  in _unpickle                                                                  
+
+                                                                                
+
+    623 │   )                                                                   
+
+    624 │   obj = None                                                          
+
+    625 │   try:                                                                
+
+  ❱ 626 │   │   obj = unpickler.load()                                          
+
+    627 │   │   if unpickler.compat_mode:                                       
+
+    628 │   │   │   warnings.warn(                                              
+
+    629 │   │   │   │   "The file '%s' has been generated with a "              
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1256 in load                              
+
+                                                                                
+
+    1253 │   │   │   │   if not key:                                            
+
+    1254 │   │   │   │   │   raise EOFError                                     
+
+    1255 │   │   │   │   assert isinstance(key, bytes_types)                    
+
+  ❱ 1256 │   │   │   │   dispatch[key[0]](self)                                 
+
+    1257 │   │   except _Stop as stopinst:                                      
+
+    1258 │   │   │   return stopinst.value                                      
+
+    1259                                                                        
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1581 in load_stack_global                 
+
+                                                                                
+
+    1578 │   │   module = self.stack.pop()                                      
+
+    1579 │   │   if type(name) is not str or type(module) is not str:           
+
+    1580 │   │   │   raise UnpicklingError("STACK_GLOBAL requires str")         
+
+  ❱ 1581 │   │   self.append(self.find_class(module, name))                     
+
+    1582 │   dispatch[STACK_GLOBAL[0]] = load_stack_global                      
+
+    1583 │                                                                      
+
+    1584 │   def load_ext1(self):                                               
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1624 in find_class                        
+
+                                                                                
+
+    1621 │   │   │   │   module = _compat_pickle.IMPORT_MAPPING[module]         
+
+    1622 │   │   __import__(module, level=0)                                    
+
+    1623 │   │   if self.proto >= 4:                                            
+
+  ❱ 1624 │   │   │   return _getattribute(sys.modules[module], name)[0]         
+
+    1625 │   │   else:                                                          
+
+    1626 │   │   │   return getattr(sys.modules[module], name)                  
+
+    1627                                                                        
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:326 in _getattribute                      
+
+                                                                                
+
+     323 │   │   │   parent = obj                                               
+
+     324 │   │   │   obj = getattr(obj, subpath)                                
+
+     325 │   │   except AttributeError:                                         
+
+  ❱  326 │   │   │   raise AttributeError("Can't get attribute {!r} on {!r}"    
+
+     327 │   │   │   │   │   │   │   │    .format(name, top)) from None         
+
+     328 │   return obj, parent                                                 
+
+     329                                                                        
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+2025-06-18 14:44:19.480 503 GET /script-health-check (127.0.0.1) 672.86ms
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:11 in <module>                                        
+
+                                                                                
+
+      8 def load_model():                                                       
+
+      9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+  ❱  11 model = load_model()                                                    
+
+     12                                                                         
+
+     13 st.title("Student Dropout Prediction")                                  
+
+     14                                                                         
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:219 in __call__                                                
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:261 in _get_or_create_cached_value                             
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:320 in _handle_cache_miss                                      
+
+                                                                                
+
+  /mount/src/repoo/app.py:9 in load_model                                       
+
+                                                                                
+
+      6 # Load model                                                            
+
+      7 @st.cache_resource                                                      
+
+      8 def load_model():                                                       
+
+  ❱   9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+     11 model = load_model()                                                    
+
+     12                                                                         
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/joblib/numpy_pickle.py:749  
+
+  in load                                                                       
+
+                                                                                
+
+    746 │   │   │   │   # A memory-mapped array has to be mapped with the endi  
+
+    747 │   │   │   │   # it has been written with. Other arrays are coerced t  
+
+    748 │   │   │   │   # native endianness of the host system.                 
+
+  ❱ 749 │   │   │   │   obj = _unpickle(                                        
+
+    750 │   │   │   │   │   fobj,                                               
+
+    751 │   │   │   │   │   ensure_native_byte_order=ensure_native_byte_order,  
+
+    752 │   │   │   │   │   filename=filename,                                  
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/joblib/numpy_pickle.py:626  
+
+  in _unpickle                                                                  
+
+                                                                                
+
+    623 │   )                                                                   
+
+    624 │   obj = None                                                          
+
+    625 │   try:                                                                
+
+  ❱ 626 │   │   obj = unpickler.load()                                          
+
+    627 │   │   if unpickler.compat_mode:                                       
+
+    628 │   │   │   warnings.warn(                                              
+
+    629 │   │   │   │   "The file '%s' has been generated with a "              
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1256 in load                              
+
+                                                                                
+
+    1253 │   │   │   │   if not key:                                            
+
+    1254 │   │   │   │   │   raise EOFError                                     
+
+    1255 │   │   │   │   assert isinstance(key, bytes_types)                    
+
+  ❱ 1256 │   │   │   │   dispatch[key[0]](self)                                 
+
+    1257 │   │   except _Stop as stopinst:                                      
+
+    1258 │   │   │   return stopinst.value                                      
+
+    1259                                                                        
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1581 in load_stack_global                 
+
+                                                                                
+
+    1578 │   │   module = self.stack.pop()                                      
+
+    1579 │   │   if type(name) is not str or type(module) is not str:           
+
+    1580 │   │   │   raise UnpicklingError("STACK_GLOBAL requires str")         
+
+  ❱ 1581 │   │   self.append(self.find_class(module, name))                     
+
+    1582 │   dispatch[STACK_GLOBAL[0]] = load_stack_global                      
+
+    1583 │                                                                      
+
+    1584 │   def load_ext1(self):                                               
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1624 in find_class                        
+
+                                                                                
+
+    1621 │   │   │   │   module = _compat_pickle.IMPORT_MAPPING[module]         
+
+    1622 │   │   __import__(module, level=0)                                    
+
+    1623 │   │   if self.proto >= 4:                                            
+
+  ❱ 1624 │   │   │   return _getattribute(sys.modules[module], name)[0]         
+
+    1625 │   │   else:                                                          
+
+    1626 │   │   │   return getattr(sys.modules[module], name)                  
+
+    1627                                                                        
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:326 in _getattribute                      
+
+                                                                                
+
+     323 │   │   │   parent = obj                                               
+
+     324 │   │   │   obj = getattr(obj, subpath)                                
+
+     325 │   │   except AttributeError:                                         
+
+  ❱  326 │   │   │   raise AttributeError("Can't get attribute {!r} on {!r}"    
+
+     327 │   │   │   │   │   │   │   │    .format(name, top)) from None         
+
+     328 │   return obj, parent                                                 
+
+     329                                                                        
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+2025-06-18 14:44:24.566 503 GET /script-health-check (127.0.0.1) 766.46ms
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:11 in <module>                                        
+
+                                                                                
+
+      8 def load_model():                                                       
+
+      9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+  ❱  11 model = load_model()                                                    
+
+     12                                                                         
+
+     13 st.title("Student Dropout Prediction")                                  
+
+     14                                                                         
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:219 in __call__                                                
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:261 in _get_or_create_cached_value                             
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:320 in _handle_cache_miss                                      
+
+                                                                                
+
+  /mount/src/repoo/app.py:9 in load_model                                       
+
+                                                                                
+
+      6 # Load model                                                            
+
+      7 @st.cache_resource                                                      
+
+      8 def load_model():                                                       
+
+  ❱   9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+     11 model = load_model()                                                    
+
+     12                                                                         
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/joblib/numpy_pickle.py:749  
+
+  in load                                                                       
+
+                                                                                
+
+    746 │   │   │   │   # A memory-mapped array has to be mapped with the endi  
+
+    747 │   │   │   │   # it has been written with. Other arrays are coerced t  
+
+    748 │   │   │   │   # native endianness of the host system.                 
+
+  ❱ 749 │   │   │   │   obj = _unpickle(                                        
+
+    750 │   │   │   │   │   fobj,                                               
+
+    751 │   │   │   │   │   ensure_native_byte_order=ensure_native_byte_order,  
+
+    752 │   │   │   │   │   filename=filename,                                  
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/joblib/numpy_pickle.py:626  
+
+  in _unpickle                                                                  
+
+                                                                                
+
+    623 │   )                                                                   
+
+    624 │   obj = None                                                          
+
+    625 │   try:                                                                
+
+  ❱ 626 │   │   obj = unpickler.load()                                          
+
+    627 │   │   if unpickler.compat_mode:                                       
+
+    628 │   │   │   warnings.warn(                                              
+
+    629 │   │   │   │   "The file '%s' has been generated with a "              
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1256 in load                              
+
+                                                                                
+
+    1253 │   │   │   │   if not key:                                            
+
+    1254 │   │   │   │   │   raise EOFError                                     
+
+    1255 │   │   │   │   assert isinstance(key, bytes_types)                    
+
+  ❱ 1256 │   │   │   │   dispatch[key[0]](self)                                 
+
+    1257 │   │   except _Stop as stopinst:                                      
+
+    1258 │   │   │   return stopinst.value                                      
+
+    1259                                                                        
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1581 in load_stack_global                 
+
+                                                                                
+
+    1578 │   │   module = self.stack.pop()                                      
+
+    1579 │   │   if type(name) is not str or type(module) is not str:           
+
+    1580 │   │   │   raise UnpicklingError("STACK_GLOBAL requires str")         
+
+  ❱ 1581 │   │   self.append(self.find_class(module, name))                     
+
+    1582 │   dispatch[STACK_GLOBAL[0]] = load_stack_global                      
+
+    1583 │                                                                      
+
+    1584 │   def load_ext1(self):                                               
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1624 in find_class                        
+
+                                                                                
+
+    1621 │   │   │   │   module = _compat_pickle.IMPORT_MAPPING[module]         
+
+    1622 │   │   __import__(module, level=0)                                    
+
+    1623 │   │   if self.proto >= 4:                                            
+
+  ❱ 1624 │   │   │   return _getattribute(sys.modules[module], name)[0]         
+
+    1625 │   │   else:                                                          
+
+    1626 │   │   │   return getattr(sys.modules[module], name)                  
+
+    1627                                                                        
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:326 in _getattribute                      
+
+                                                                                
+
+     323 │   │   │   parent = obj                                               
+
+     324 │   │   │   obj = getattr(obj, subpath)                                
+
+     325 │   │   except AttributeError:                                         
+
+  ❱  326 │   │   │   raise AttributeError("Can't get attribute {!r} on {!r}"    
+
+     327 │   │   │   │   │   │   │   │    .format(name, top)) from None         
+
+     328 │   return obj, parent                                                 
+
+     329                                                                        
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+2025-06-18 14:44:29.603 503 GET /script-health-check (127.0.0.1) 794.44ms
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:11 in <module>                                        
+
+                                                                                
+
+      8 def load_model():                                                       
+
+      9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+  ❱  11 model = load_model()                                                    
+
+     12                                                                         
+
+     13 st.title("Student Dropout Prediction")                                  
+
+     14                                                                         
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:219 in __call__                                                
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:261 in _get_or_create_cached_value                             
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:320 in _handle_cache_miss                                      
+
+                                                                                
+
+  /mount/src/repoo/app.py:9 in load_model                                       
+
+                                                                                
+
+      6 # Load model                                                            
+
+      7 @st.cache_resource                                                      
+
+      8 def load_model():                                                       
+
+  ❱   9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+     11 model = load_model()                                                    
+
+     12                                                                         
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/joblib/numpy_pickle.py:749  
+
+  in load                                                                       
+
+                                                                                
+
+    746 │   │   │   │   # A memory-mapped array has to be mapped with the endi  
+
+    747 │   │   │   │   # it has been written with. Other arrays are coerced t  
+
+    748 │   │   │   │   # native endianness of the host system.                 
+
+  ❱ 749 │   │   │   │   obj = _unpickle(                                        
+
+    750 │   │   │   │   │   fobj,                                               
+
+    751 │   │   │   │   │   ensure_native_byte_order=ensure_native_byte_order,  
+
+    752 │   │   │   │   │   filename=filename,                                  
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/joblib/numpy_pickle.py:626  
+
+  in _unpickle                                                                  
+
+                                                                                
+
+    623 │   )                                                                   
+
+    624 │   obj = None                                                          
+
+    625 │   try:                                                                
+
+  ❱ 626 │   │   obj = unpickler.load()                                          
+
+    627 │   │   if unpickler.compat_mode:                                       
+
+    628 │   │   │   warnings.warn(                                              
+
+    629 │   │   │   │   "The file '%s' has been generated with a "              
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1256 in load                              
+
+                                                                                
+
+    1253 │   │   │   │   if not key:                                            
+
+    1254 │   │   │   │   │   raise EOFError                                     
+
+    1255 │   │   │   │   assert isinstance(key, bytes_types)                    
+
+  ❱ 1256 │   │   │   │   dispatch[key[0]](self)                                 
+
+    1257 │   │   except _Stop as stopinst:                                      
+
+    1258 │   │   │   return stopinst.value                                      
+
+    1259                                                                        
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1581 in load_stack_global                 
+
+                                                                                
+
+    1578 │   │   module = self.stack.pop()                                      
+
+    1579 │   │   if type(name) is not str or type(module) is not str:           
+
+    1580 │   │   │   raise UnpicklingError("STACK_GLOBAL requires str")         
+
+  ❱ 1581 │   │   self.append(self.find_class(module, name))                     
+
+    1582 │   dispatch[STACK_GLOBAL[0]] = load_stack_global                      
+
+    1583 │                                                                      
+
+    1584 │   def load_ext1(self):                                               
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1624 in find_class                        
+
+                                                                                
+
+    1621 │   │   │   │   module = _compat_pickle.IMPORT_MAPPING[module]         
+
+    1622 │   │   __import__(module, level=0)                                    
+
+    1623 │   │   if self.proto >= 4:                                            
+
+  ❱ 1624 │   │   │   return _getattribute(sys.modules[module], name)[0]         
+
+    1625 │   │   else:                                                          
+
+    1626 │   │   │   return getattr(sys.modules[module], name)                  
+
+    1627                                                                        
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:326 in _getattribute                      
+
+                                                                                
+
+     323 │   │   │   parent = obj                                               
+
+     324 │   │   │   obj = getattr(obj, subpath)                                
+
+     325 │   │   except AttributeError:                                         
+
+  ❱  326 │   │   │   raise AttributeError("Can't get attribute {!r} on {!r}"    
+
+     327 │   │   │   │   │   │   │   │    .format(name, top)) from None         
+
+     328 │   return obj, parent                                                 
+
+     329                                                                        
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+2025-06-18 14:44:34.690 503 GET /script-health-check (127.0.0.1) 865.22ms
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:11 in <module>                                        
+
+                                                                                
+
+      8 def load_model():                                                       
+
+      9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+  ❱  11 model = load_model()                                                    
+
+     12                                                                         
+
+     13 st.title("Student Dropout Prediction")                                  
+
+     14                                                                         
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:219 in __call__                                                
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:261 in _get_or_create_cached_value                             
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:320 in _handle_cache_miss                                      
+
+                                                                                
+
+  /mount/src/repoo/app.py:9 in load_model                                       
+
+                                                                                
+
+      6 # Load model                                                            
+
+      7 @st.cache_resource                                                      
+
+      8 def load_model():                                                       
+
+  ❱   9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+     11 model = load_model()                                                    
+
+     12                                                                         
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/joblib/numpy_pickle.py:749  
+
+  in load                                                                       
+
+                                                                                
+
+    746 │   │   │   │   # A memory-mapped array has to be mapped with the endi  
+
+    747 │   │   │   │   # it has been written with. Other arrays are coerced t  
+
+    748 │   │   │   │   # native endianness of the host system.                 
+
+  ❱ 749 │   │   │   │   obj = _unpickle(                                        
+
+    750 │   │   │   │   │   fobj,                                               
+
+    751 │   │   │   │   │   ensure_native_byte_order=ensure_native_byte_order,  
+
+    752 │   │   │   │   │   filename=filename,                                  
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/joblib/numpy_pickle.py:626  
+
+  in _unpickle                                                                  
+
+                                                                                
+
+    623 │   )                                                                   
+
+    624 │   obj = None                                                          
+
+    625 │   try:                                                                
+
+  ❱ 626 │   │   obj = unpickler.load()                                          
+
+    627 │   │   if unpickler.compat_mode:                                       
+
+    628 │   │   │   warnings.warn(                                              
+
+    629 │   │   │   │   "The file '%s' has been generated with a "              
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1256 in load                              
+
+                                                                                
+
+    1253 │   │   │   │   if not key:                                            
+
+    1254 │   │   │   │   │   raise EOFError                                     
+
+    1255 │   │   │   │   assert isinstance(key, bytes_types)                    
+
+  ❱ 1256 │   │   │   │   dispatch[key[0]](self)                                 
+
+    1257 │   │   except _Stop as stopinst:                                      
+
+    1258 │   │   │   return stopinst.value                                      
+
+    1259                                                                        
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1581 in load_stack_global                 
+
+                                                                                
+
+    1578 │   │   module = self.stack.pop()                                      
+
+    1579 │   │   if type(name) is not str or type(module) is not str:           
+
+    1580 │   │   │   raise UnpicklingError("STACK_GLOBAL requires str")         
+
+  ❱ 1581 │   │   self.append(self.find_class(module, name))                     
+
+    1582 │   dispatch[STACK_GLOBAL[0]] = load_stack_global                      
+
+    1583 │                                                                      
+
+    1584 │   def load_ext1(self):                                               
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1624 in find_class                        
+
+                                                                                
+
+    1621 │   │   │   │   module = _compat_pickle.IMPORT_MAPPING[module]         
+
+    1622 │   │   __import__(module, level=0)                                    
+
+    1623 │   │   if self.proto >= 4:                                            
+
+  ❱ 1624 │   │   │   return _getattribute(sys.modules[module], name)[0]         
+
+    1625 │   │   else:                                                          
+
+    1626 │   │   │   return getattr(sys.modules[module], name)                  
+
+    1627                                                                        
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:326 in _getattribute                      
+
+                                                                                
+
+     323 │   │   │   parent = obj                                               
+
+     324 │   │   │   obj = getattr(obj, subpath)                                
+
+     325 │   │   except AttributeError:                                         
+
+  ❱  326 │   │   │   raise AttributeError("Can't get attribute {!r} on {!r}"    
+
+     327 │   │   │   │   │   │   │   │    .format(name, top)) from None         
+
+     328 │   return obj, parent                                                 
+
+     329                                                                        
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+2025-06-18 14:44:39.598 503 GET /script-health-check (127.0.0.1) 818.80ms
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:11 in <module>                                        
+
+                                                                                
+
+      8 def load_model():                                                       
+
+      9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+  ❱  11 model = load_model()                                                    
+
+     12                                                                         
+
+     13 st.title("Student Dropout Prediction")                                  
+
+     14                                                                         
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:219 in __call__                                                
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:261 in _get_or_create_cached_value                             
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:320 in _handle_cache_miss                                      
+
+                                                                                
+
+  /mount/src/repoo/app.py:9 in load_model                                       
+
+                                                                                
+
+      6 # Load model                                                            
+
+      7 @st.cache_resource                                                      
+
+      8 def load_model():                                                       
+
+  ❱   9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+     11 model = load_model()                                                    
+
+     12                                                                         
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/joblib/numpy_pickle.py:749  
+
+  in load                                                                       
+
+                                                                                
+
+    746 │   │   │   │   # A memory-mapped array has to be mapped with the endi  
+
+    747 │   │   │   │   # it has been written with. Other arrays are coerced t  
+
+    748 │   │   │   │   # native endianness of the host system.                 
+
+  ❱ 749 │   │   │   │   obj = _unpickle(                                        
+
+    750 │   │   │   │   │   fobj,                                               
+
+    751 │   │   │   │   │   ensure_native_byte_order=ensure_native_byte_order,  
+
+    752 │   │   │   │   │   filename=filename,                                  
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/joblib/numpy_pickle.py:626  
+
+  in _unpickle                                                                  
+
+                                                                                
+
+    623 │   )                                                                   
+
+    624 │   obj = None                                                          
+
+    625 │   try:                                                                
+
+  ❱ 626 │   │   obj = unpickler.load()                                          
+
+    627 │   │   if unpickler.compat_mode:                                       
+
+    628 │   │   │   warnings.warn(                                              
+
+    629 │   │   │   │   "The file '%s' has been generated with a "              
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1256 in load                              
+
+                                                                                
+
+    1253 │   │   │   │   if not key:                                            
+
+    1254 │   │   │   │   │   raise EOFError                                     
+
+    1255 │   │   │   │   assert isinstance(key, bytes_types)                    
+
+  ❱ 1256 │   │   │   │   dispatch[key[0]](self)                                 
+
+    1257 │   │   except _Stop as stopinst:                                      
+
+    1258 │   │   │   return stopinst.value                                      
+
+    1259                                                                        
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1581 in load_stack_global                 
+
+                                                                                
+
+    1578 │   │   module = self.stack.pop()                                      
+
+    1579 │   │   if type(name) is not str or type(module) is not str:           
+
+    1580 │   │   │   raise UnpicklingError("STACK_GLOBAL requires str")         
+
+  ❱ 1581 │   │   self.append(self.find_class(module, name))                     
+
+    1582 │   dispatch[STACK_GLOBAL[0]] = load_stack_global                      
+
+    1583 │                                                                      
+
+    1584 │   def load_ext1(self):                                               
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1624 in find_class                        
+
+                                                                                
+
+    1621 │   │   │   │   module = _compat_pickle.IMPORT_MAPPING[module]         
+
+    1622 │   │   __import__(module, level=0)                                    
+
+    1623 │   │   if self.proto >= 4:                                            
+
+  ❱ 1624 │   │   │   return _getattribute(sys.modules[module], name)[0]         
+
+    1625 │   │   else:                                                          
+
+    1626 │   │   │   return getattr(sys.modules[module], name)                  
+
+    1627                                                                        
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:326 in _getattribute                      
+
+                                                                                
+
+     323 │   │   │   parent = obj                                               
+
+     324 │   │   │   obj = getattr(obj, subpath)                                
+
+     325 │   │   except AttributeError:                                         
+
+  ❱  326 │   │   │   raise AttributeError("Can't get attribute {!r} on {!r}"    
+
+     327 │   │   │   │   │   │   │   │    .format(name, top)) from None         
+
+     328 │   return obj, parent                                                 
+
+     329                                                                        
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+2025-06-18 14:44:44.631 503 GET /script-health-check (127.0.0.1) 785.05ms
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:11 in <module>                                        
+
+                                                                                
+
+      8 def load_model():                                                       
+
+      9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+  ❱  11 model = load_model()                                                    
+
+     12                                                                         
+
+     13 st.title("Student Dropout Prediction")                                  
+
+     14                                                                         
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:219 in __call__                                                
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:261 in _get_or_create_cached_value                             
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:320 in _handle_cache_miss                                      
+
+                                                                                
+
+  /mount/src/repoo/app.py:9 in load_model                                       
+
+                                                                                
+
+      6 # Load model                                                            
+
+      7 @st.cache_resource                                                      
+
+      8 def load_model():                                                       
+
+  ❱   9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+     11 model = load_model()                                                    
+
+     12                                                                         
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/joblib/numpy_pickle.py:749  
+
+  in load                                                                       
+
+                                                                                
+
+    746 │   │   │   │   # A memory-mapped array has to be mapped with the endi  
+
+    747 │   │   │   │   # it has been written with. Other arrays are coerced t  
+
+    748 │   │   │   │   # native endianness of the host system.                 
+
+  ❱ 749 │   │   │   │   obj = _unpickle(                                        
+
+    750 │   │   │   │   │   fobj,                                               
+
+    751 │   │   │   │   │   ensure_native_byte_order=ensure_native_byte_order,  
+
+    752 │   │   │   │   │   filename=filename,                                  
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/joblib/numpy_pickle.py:626  
+
+  in _unpickle                                                                  
+
+                                                                                
+
+    623 │   )                                                                   
+
+    624 │   obj = None                                                          
+
+    625 │   try:                                                                
+
+  ❱ 626 │   │   obj = unpickler.load()                                          
+
+    627 │   │   if unpickler.compat_mode:                                       
+
+    628 │   │   │   warnings.warn(                                              
+
+    629 │   │   │   │   "The file '%s' has been generated with a "              
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1256 in load                              
+
+                                                                                
+
+    1253 │   │   │   │   if not key:                                            
+
+    1254 │   │   │   │   │   raise EOFError                                     
+
+    1255 │   │   │   │   assert isinstance(key, bytes_types)                    
+
+  ❱ 1256 │   │   │   │   dispatch[key[0]](self)                                 
+
+    1257 │   │   except _Stop as stopinst:                                      
+
+    1258 │   │   │   return stopinst.value                                      
+
+    1259                                                                        
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1581 in load_stack_global                 
+
+                                                                                
+
+    1578 │   │   module = self.stack.pop()                                      
+
+    1579 │   │   if type(name) is not str or type(module) is not str:           
+
+    1580 │   │   │   raise UnpicklingError("STACK_GLOBAL requires str")         
+
+  ❱ 1581 │   │   self.append(self.find_class(module, name))                     
+
+    1582 │   dispatch[STACK_GLOBAL[0]] = load_stack_global                      
+
+    1583 │                                                                      
+
+    1584 │   def load_ext1(self):                                               
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1624 in find_class                        
+
+                                                                                
+
+    1621 │   │   │   │   module = _compat_pickle.IMPORT_MAPPING[module]         
+
+    1622 │   │   __import__(module, level=0)                                    
+
+    1623 │   │   if self.proto >= 4:                                            
+
+  ❱ 1624 │   │   │   return _getattribute(sys.modules[module], name)[0]         
+
+    1625 │   │   else:                                                          
+
+    1626 │   │   │   return getattr(sys.modules[module], name)                  
+
+    1627                                                                        
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:326 in _getattribute                      
+
+                                                                                
+
+     323 │   │   │   parent = obj                                               
+
+     324 │   │   │   obj = getattr(obj, subpath)                                
+
+     325 │   │   except AttributeError:                                         
+
+  ❱  326 │   │   │   raise AttributeError("Can't get attribute {!r} on {!r}"    
+
+     327 │   │   │   │   │   │   │   │    .format(name, top)) from None         
+
+     328 │   return obj, parent                                                 
+
+     329                                                                        
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+2025-06-18 14:44:49.607 503 GET /script-health-check (127.0.0.1) 816.62ms
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:669 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/repoo/app.py:11 in <module>                                        
+
+                                                                                
+
+      8 def load_model():                                                       
+
+      9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+  ❱  11 model = load_model()                                                    
+
+     12                                                                         
+
+     13 st.title("Student Dropout Prediction")                                  
+
+     14                                                                         
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:219 in __call__                                                
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:261 in _get_or_create_cached_value                             
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/caching/  
+
+  cache_utils.py:320 in _handle_cache_miss                                      
+
+                                                                                
+
+  /mount/src/repoo/app.py:9 in load_model                                       
+
+                                                                                
+
+      6 # Load model                                                            
+
+      7 @st.cache_resource                                                      
+
+      8 def load_model():                                                       
+
+  ❱   9 │   return load("model2.joblib")                                        
+
+     10                                                                         
+
+     11 model = load_model()                                                    
+
+     12                                                                         
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/joblib/numpy_pickle.py:749  
+
+  in load                                                                       
+
+                                                                                
+
+    746 │   │   │   │   # A memory-mapped array has to be mapped with the endi  
+
+    747 │   │   │   │   # it has been written with. Other arrays are coerced t  
+
+    748 │   │   │   │   # native endianness of the host system.                 
+
+  ❱ 749 │   │   │   │   obj = _unpickle(                                        
+
+    750 │   │   │   │   │   fobj,                                               
+
+    751 │   │   │   │   │   ensure_native_byte_order=ensure_native_byte_order,  
+
+    752 │   │   │   │   │   filename=filename,                                  
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/joblib/numpy_pickle.py:626  
+
+  in _unpickle                                                                  
+
+                                                                                
+
+    623 │   )                                                                   
+
+    624 │   obj = None                                                          
+
+    625 │   try:                                                                
+
+  ❱ 626 │   │   obj = unpickler.load()                                          
+
+    627 │   │   if unpickler.compat_mode:                                       
+
+    628 │   │   │   warnings.warn(                                              
+
+    629 │   │   │   │   "The file '%s' has been generated with a "              
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1256 in load                              
+
+                                                                                
+
+    1253 │   │   │   │   if not key:                                            
+
+    1254 │   │   │   │   │   raise EOFError                                     
+
+    1255 │   │   │   │   assert isinstance(key, bytes_types)                    
+
+  ❱ 1256 │   │   │   │   dispatch[key[0]](self)                                 
+
+    1257 │   │   except _Stop as stopinst:                                      
+
+    1258 │   │   │   return stopinst.value                                      
+
+    1259                                                                        
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1581 in load_stack_global                 
+
+                                                                                
+
+    1578 │   │   module = self.stack.pop()                                      
+
+    1579 │   │   if type(name) is not str or type(module) is not str:           
+
+    1580 │   │   │   raise UnpicklingError("STACK_GLOBAL requires str")         
+
+  ❱ 1581 │   │   self.append(self.find_class(module, name))                     
+
+    1582 │   dispatch[STACK_GLOBAL[0]] = load_stack_global                      
+
+    1583 │                                                                      
+
+    1584 │   def load_ext1(self):                                               
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:1624 in find_class                        
+
+                                                                                
+
+    1621 │   │   │   │   module = _compat_pickle.IMPORT_MAPPING[module]         
+
+    1622 │   │   __import__(module, level=0)                                    
+
+    1623 │   │   if self.proto >= 4:                                            
+
+  ❱ 1624 │   │   │   return _getattribute(sys.modules[module], name)[0]         
+
+    1625 │   │   else:                                                          
+
+    1626 │   │   │   return getattr(sys.modules[module], name)                  
+
+    1627                                                                        
+
+                                                                                
+
+  /usr/local/lib/python3.13/pickle.py:326 in _getattribute                      
+
+                                                                                
+
+     323 │   │   │   parent = obj                                               
+
+     324 │   │   │   obj = getattr(obj, subpath)                                
+
+     325 │   │   except AttributeError:                                         
+
+  ❱  326 │   │   │   raise AttributeError("Can't get attribute {!r} on {!r}"    
+
+     327 │   │   │   │   │   │   │   │    .format(name, top)) from None         
+
+     328 │   return obj, parent                                                 
+
+     329                                                                        
+
+────────────────────────────────────────────────────────────────────────────────
+
+AttributeError: Can't get attribute '_RemainderColsList' on <module 
+
+'sklearn.compose._column_transformer' from 
+
+'/home/adminuser/venv/lib/python3.13/site-packages/sklearn/compose/_column_trans
+
+former.py'>
+
+2025-06-18 14:44:54.511 503 GET /script-health-check (127.0.0.1) 732.19ms

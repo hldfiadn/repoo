@@ -1,0 +1,13 @@
+_id,jenis,uraian,satuan,nilai
+1,Tanaman Pangan,Padi Sawah,ton/ha,6,11
+2,Tanaman Pangan,Padi Gogo,ton/ha,4,84
+3,Tanaman Pangan,Jagung,ton/ha,5,76
+4,Tanaman Pangan,Ubi Kayu,ton/ha,24,71
+5,Tanaman Pangan,Ubi Jalar,ton/ha,26,54
+6,Hortikultura,Alpukat,btg,171,65
+7,Hortikultura,Durian,btg,54,09
+8,Hortikultura,Cabai Keriting,ku/ha,37,9
+9,Hortikultura,Cabe Rawit,ku/ha,38,3
+10,Perkebunan,Kopi,kg/ha,571,95
+11,Perkebunan,Cengkeh,kg/ha,95,63
+12,Perkebunan,Tembakau,kg/ha,1.127,01
